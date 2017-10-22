@@ -1,13 +1,83 @@
-#top-heading {
-    /* TODO */
+* {
+  	margin:0; 
+  	padding:0;
+  	font-style: normal;
+} 
+body {
+	font-size: 62.5%; 
 }
 
-#slogan {
-    /* TODO */
+/* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
+div#firstnav {
+	background-image: url(../images/common/T--SYSU-Software-top-nav-bg.png);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
-#sysu-software-2017 {
-    /* TODO */
+div#firstnav>ul{
+	list-style-type: none;
+	margin: 1.5em 0;
+}
+div#firstnav li{
+  	display: inline-block;
+  	margin: 0.2em 2em;
+  	text-align: center;
+}
+
+div#firstnav img{
+	max-width: 100%;
+	height: 2.5em;
+	display: inline-block;
+	padding: 1em 2em;
+}
+
+#firstnav li a{
+	color: white;
+	font-size: 1.5em;
+	font-style: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#firstnav li a:hover,a:active{
+	text-decoration: underline;
+}
+
+/* 以下是帆船大背景部分 */
+div#back_0{
+	background-image: url(../images/common/T--SYSU-Software-lighthouse.png); 
+	background-repeat:no-repeat;
+	width: 100%;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+}
+
+div#back_1 {
+	color: rgb(234, 194, 96);
+	width: -webkit-fill-available;
+	text-align: center;
+	padding: 8em 0;
+}
+div#back_1 img#plane {
+	height: 5em;
+	position: relative;
+	right: 25em;
+}
+div#back_1>#page_title{
+	font-size: 8em; /*80px*/
+	text-transform: uppercase;
+}
+#slogan{
+	font-size: 5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#sysu-software-2017{
+	font-size: 2.5em; /*25px*/
+	font-weight: 200;
 }
 
 #mid-nav-card {

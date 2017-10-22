@@ -1,0 +1,141 @@
+@charset "UTF-8";
+* {
+  	margin:0; 
+  	padding:0;
+  	font-style: normal;
+} 
+body {
+	font-size: 10px; /* 10px */
+}
+
+div#firstnav {
+	background-image: url(images/T--SYSU-Software--Rectangle-1.png);
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+div#firstnav>ul{
+	list-style-type: none;
+	float: right;
+	margin: 1.5em 0;
+}
+div#firstnav li{
+  	display: inline-block;
+  	margin: 0.2em 2em;
+  	text-align: center;
+}
+
+div#firstnav img{
+	margin:1.5em 5.5em;
+	width: 5.5em;
+	float: left;
+	display: inline-block;
+}
+
+#firstnav li a{
+	color: white;
+	font-size: 1.5em;
+	font-style: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#firstnav li a:hover,a:active{
+	text-decoration: underline;
+}
+
+div#back_0{
+	background-image: url(images/T--SYSU-Software--T--SYSU-Software--1.png); 
+	background-repeat:no-repeat;
+	width: 100%;
+	background-size: contain;
+	float: left;
+}
+
+div#back_1 {
+	color: rgb(234, 194, 96);
+	width: -webkit-fill-available;
+	text-align: center;
+}
+div#back_1 img {
+	height: 5em;
+	float: left;
+	position: relative;
+
+}
+div#back_1>h1{
+	font-size: 8em; /*80px*/
+	text-transform: uppercase;
+	padding-top: 1.5em; /*1em=80px*/
+}
+div#back_1>h2{
+	font-size: 5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+div#back_1>h3{
+	font-size: 2.5em; /*25px*/
+	font-weight: 200;
+}
+#overview {
+	margin-top: 25em;
+	float: left;
+	width: -webkit-fill-available;
+}
+
+#overview>h1{
+	text-align: center;
+	color: rgb(41, 101, 146);
+	font-weight: 400;
+	font-size: 6em; /*60px*/
+	margin-bottom: 0.3em;
+}
+#o1 {
+	margin: 0 13em;
+	float: left;
+	width: -webkit-fill-available;
+}
+#o1 img{
+	width: 35em;
+	margin:0 2em;
+}
+#o1 p{
+	font-size: 2em; /*30px*/
+	box-sizing: content-box;
+	width: 25em;
+	float: right;
+}
+
+#o2{
+	float: left;
+	margin: 5em 13em;
+	width: -webkit-fill-available;
+}
+#o2 img {
+	width: 35em;
+	margin: 0 2em;
+	float: right;
+}
+#o2 p {
+	font-size: 2em; /*30px*/
+	box-sizing: content-box;
+	width: 25em;
+	text-align: right;
+}
+
+#secondnav{
+	float: left;
+	background-image: url(images/T--SYSU-Software--navbg.png);
+	width: -webkit-fill-available;
+	height: 140px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	text-align: center;
+}
+#secondnav li{
+  	display: inline-block;
+  	margin: 0.2em 2em;
+  	text-align: center;
+}

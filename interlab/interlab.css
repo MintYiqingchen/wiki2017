@@ -1,23 +1,24 @@
 @charset "UTF-8";
+
 * {
   	margin:0; 
   	padding:0;
   	font-style: normal;
 } 
 body {
-	font-size: 10px; /* 10px */
-}
+	font-size: 62.5%; 
+}*
 
 div#firstnav {
 	background-image: url(images/T--SYSU-Software--Rectangle-1.png);
 	width: 100%;
 	height: 100%;
-	float: left;
+	display: flex;
+	justify-content: space-around;
 }
 
 div#firstnav>ul{
 	list-style-type: none;
-	float: right;
 	margin: 1.5em 0;
 }
 div#firstnav li{
@@ -27,10 +28,10 @@ div#firstnav li{
 }
 
 div#firstnav img{
-	margin:1.5em 5.5em;
-	width: 5.5em;
-	float: left;
+	max-width: 100%;
+	height: 2.5em;
 	display: inline-block;
+	padding: 1em 2em;
 }
 
 #firstnav li a{
@@ -50,24 +51,24 @@ div#back_0{
 	background-repeat:no-repeat;
 	width: 100%;
 	background-size: contain;
-	float: left;
+	display: flex;
+	flex-direction: column;
 }
 
 div#back_1 {
 	color: rgb(234, 194, 96);
 	width: -webkit-fill-available;
 	text-align: center;
+	padding: 8em 0;
 }
 div#back_1 img {
 	height: 5em;
-	float: left;
 	position: relative;
-
+	right: 25em;
 }
 div#back_1>h1{
 	font-size: 8em; /*80px*/
 	text-transform: uppercase;
-	padding-top: 1.5em; /*1em=80px*/
 }
 div#back_1>h2{
 	font-size: 5em;
@@ -79,63 +80,84 @@ div#back_1>h3{
 	font-weight: 200;
 }
 #overview {
-	margin-top: 25em;
-	float: left;
+	display: flex;
 	width: -webkit-fill-available;
+	padding-top: 15em;
+	flex-direction: column;
+	align-items: center;
 }
 
 #overview>h1{
-	text-align: center;
 	color: rgb(41, 101, 146);
 	font-weight: 400;
 	font-size: 6em; /*60px*/
-	margin-bottom: 0.3em;
 }
-#o1 {
-	margin: 0 13em;
-	float: left;
-	width: -webkit-fill-available;
+#o1, #o2 {
+	display: flex;
+	margin: 3em 10em;
+	align-items: center;
+}
+#o1>p{
+	font-size:2em;
+}
+#o2>p{
+	font-size:2em;
 }
 #o1 img{
-	width: 35em;
+	height: 20em;
 	margin:0 2em;
 }
-#o1 p{
-	font-size: 2em; /*30px*/
-	box-sizing: content-box;
-	width: 25em;
-	float: right;
-}
-
-#o2{
-	float: left;
-	margin: 5em 13em;
-	width: -webkit-fill-available;
-}
 #o2 img {
-	width: 35em;
+	height: 20em;
 	margin: 0 2em;
-	float: right;
+	order: 2;
 }
-#o2 p {
-	font-size: 2em; /*30px*/
-	box-sizing: content-box;
-	width: 25em;
-	text-align: right;
-}
-
 #secondnav{
-	float: left;
 	background-image: url(images/T--SYSU-Software--navbg.png);
 	width: -webkit-fill-available;
-	height: 140px;
-	background-size: contain;
+	height: 100px;
+	background-size: 100% 7em;
 	background-repeat: no-repeat;
 	list-style-type: none;
-	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
 }
-#secondnav li{
-  	display: inline-block;
-  	margin: 0.2em 2em;
-  	text-align: center;
+#secondnav li>a{
+	display: inline-block;
+  	font-size: 2em;
+  	text-decoration: none;
+  	color: #FFF;
+  	font-weight: 400;
+  	padding-bottom: 1.5em;
+}
+#secondnav li>a:hover,a:visited{
+  	text-decoration: underline;
+  	color: rgb(42, 87, 135);
+}
+#experiment,#material,#result{
+	display:none;
+}
+#experiment,#material,#result p{
+	font-size: 2em;
+}
+
+#footer{
+	background-image: url(images/T--SYSU-Software--tower1.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40em;
+	background-size: cover;
+}
+#footer ul{
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 10em;
+	left: 5em;
+}
+#footer li{
+	font-size: 2em;
+	color: rgb(150,150,150);
+	margin: 1em;
 }

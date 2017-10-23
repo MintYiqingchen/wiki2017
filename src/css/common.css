@@ -1,201 +1,299 @@
 * {
-  	margin:0;
-  	padding:0;
-  	font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
 }
+<<<<<<< HEAD
 html {
 	font-size: 62.5%;
+=======
+
+body {
+    font-size: 62.5%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #296592;
+    margin-bottom: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+>>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6
+}
+
+.overview p {
+    color: #4491E0;
+    text-align: center;
+    font-size: 1.5rem;
+	margin-top: 1em;
+}
+.overview {
+	margin-bottom: 5rem;
+}
+
+.overview p:first-child {
+    margin-top: 0;
+}
+
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
+
 div#firstnav {
-	background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
+    background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-div#firstnav>ul{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: row;
-	list-style-type: none;
-	justify-content: flex-start;
-	margin: 1.5em 0;
+div#firstnav>ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+    margin: 1.5em 0;
 }
+<<<<<<< HEAD
 div#firstnav li{
   	display: inline-block;
   	margin: 0.2em 1.5em;
   	text-align: center;
+=======
+
+div#firstnav li {
+    display: inline-block;
+    margin: 0.2em 2em;
+    text-align: center;
+>>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6
 }
 
-div#firstnav img{
-	max-width: 100%;
-	height: 3em;
-	margin-left: 4vw;
-	margin-right: 2vw;
-	display: inline-block;
+div#firstnav img {
+    max-width: 100%;
+    height: 3em;
+    margin-left: 4vw;
+    margin-right: 2vw;
+    display: inline-block;
 }
 
-#firstnav li a{
-	color: white;
-	font-size: 1.5em;
-	font-style: bold;
-	text-transform: uppercase;
-	text-decoration: none;
+#firstnav li a {
+    color: white;
+    font-size: 1.5em;
+    font-style: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-#firstnav li a:hover,a:active{
-	text-decoration: underline;
+#firstnav li a:hover,
+a:active {
+    text-decoration: underline;
 }
 
 div#back_1 {
-	color: rgb(234, 194, 96);
-	width: -webkit-fill-available;
-	text-align: center;
-	padding: 8em 0;
+    color: rgb(234, 194, 96);
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 8em 0;
 }
+
 div#back_1 img#plane {
-	height: 5em;
-	position: relative;
-	right: 25em;
+    height: 5em;
+    position: relative;
+    right: 25em;
 }
+
 #first-page {
-	position: relative;
-	width: 100%;
-	min-height: 700px;
+    position: relative;
+    width: 100%;
+    min-height: 700px;
 }
 
 #ship-background {
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 700px;
-	background-image: url("../images/common/T--SYSU-Software--background.png");
-	background-size: cover;
-	background-position: center bottom;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/common/T--SYSU-Software--background.png");
+    background-size: cover;
+    background-position: center bottom;
 }
 
 #top-title {
-	font-size: 8em;
-	padding-top: 2em;
-	color: #EAC260;
-	white-space: nowrap;
-	text-align: center;
-	font-weight: bold;
-	text-transform: uppercase;
+    font-size: 8em;
+    padding-top: 2em;
+    color: #EAC260;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: serif;
 }
-#slogan{
-	font-size: 5em;
-	margin-top: 1.2em;
-	color: #EAC260;
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
+
+#slogan {
+    font-size: 5em;
+    margin-top: 1.2em;
+    color: #EAC260;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: serif;
 }
-#sysu-software-2017{
-	margin-top: 0.5em;
-	margin-bottom: 8em;
-	font-size: 2.5em; /*25px*/
-	color: #EAC260;
-	text-align: center;
-	font-weight: 200;
+
+#sysu-software-2017 {
+    margin-top: 0.5em;
+    margin-bottom: 10em;
+    font-size: 2.5em;
+    /*25px*/
+    color: #EAC260;
+    text-align: center;
+    font-weight: 200;
+    font-family: serif;
 }
 
 .mid-nav-card {
-	height: 150px;
-	background-image: url("../images/common/T--SYSU-Software--mid-nav-bg.png");
-	background-size: cover;
-	background-position: center top;
+    height: 150px;
+    margin-top: 10em;
+    background-image: url("../images/common/T--SYSU-Software--mid-nav-bg.png");
+    background-size: cover;
+    background-position: center top;
 }
 
 .nav-tabs {
-	width: 100%;
-	height: 70%;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .mid-nav-tab {
-	font-size: 2.5em;
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .mid-nav-tab:hover {
-	color: #2A5787;
-	text-decoration: underline;
-	cursor: pointer;
+    color: #2A5787;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .tab-page {
-	display: none;
+    display: none;
 }
 
 .page-content {
-    width: 60%;
+    width: 70%;
     margin: 5em auto 3em;
 }
 
 #contact {
-	background-image: url("../images/common/T--SYSU-Software--lighthouse.png");
-	background-size: cover;
-	background-position: center top;
-	height: 450px;
+    background-image: url("../images/common/T--SYSU-Software--lighthouse.png");
+    background-size: cover;
+    background-position: center top;
+    height: 450px;
 }
 
 .contact-item:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .contact-item {
-	margin-top: 3em;
+    margin-top: 3em;
 }
 
 #contact-content {
-	padding: 50px 25% 50px 0;
-	width: 75%;
-	height: calc(100% - 100px);
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+    padding: 50px 25% 50px 0;
+    width: 75%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact-heading {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 2em;
-	color: #969696;
-	margin-bottom: 0.8em;
-	text-transform: uppercase;
-	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #969696;
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .contact-value {
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	font-size: 2em;
-	color: white;
-	text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-decoration: underline;
 }
 
 .contact-icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .contact-icon:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
+
 .contact-icon {
+<<<<<<< HEAD
 	margin-left: 2.5em;
 }
 .contact-icon > img {
 	width: 5em;
 	height: 5em;
 }
+=======
+    margin-left: 2.5em;
+}
+
+.contact-icon>img {
+    width: 5em;
+    height: 5em;
+}
+>>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6

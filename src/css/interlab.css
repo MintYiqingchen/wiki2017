@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+#overview>h1{
+	color: rgb(41, 101, 146);
+	font-weight: 400;
+	font-size: 6em; /*60px*/
+	text-align: center;
+}
+#overview {
+	width: 65%;
+	margin:0 auto;
+}
+#o1,#o2{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	justify-content: center;
+	margin: 3rem;
+}
+#o1>p,#o2>p{
+	margin: 0 1em;
+}
+#o1 img,#o2 img{
+	height: 20rem;
+}
+#o2>img{
+	order: 2;
+}
+
+.tab-page {
+	font-size: 2rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tab-page>div:nth-child(even){
+	background-image: url(../images/interlab/T--SYSU-Software--Rectangle-6.png);
+}
+.tab-page>div:nth-child(even)>div{
+	order: 2;
+}
+.matblk,.resblk,.epblk {
+	padding: 5rem 5rem;
+	margin: 5rem auto;
+	width: 65%;
+}
+
+.matblk h4,img{
+	padding:1em 0;
+}
+
+.resblk>p{
+	padding:2.5rem;
+}
+.img-ex{
+	font-size: 2rem !important;
+}
+
+.fig_exp {
+	text-align: center;
+}
+.fig_exp img{
+	width: 400px;
+}
+.center-img{
+	text-align: center;
+}
+.bias-img{
+	display: flex;
+	align-items: center;
+}

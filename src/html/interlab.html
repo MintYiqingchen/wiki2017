@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../css/common.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/interlab.css">
+</head>
+
+<body>
+  <div id="firstnav">
+    <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    <ul>
+      <li><a href="#">project</a></li>
+      <li><a href="#">modeling</a></li>
+      <li><a href="#">modeling</a></li>
+      <li><a href="#">human practice</a></li>
+      <li><a href="#">collabotation</a></li>
+      <li><a href="./interlab.html">interlab</a></li>
+      <li><a href="#">safety</a></li>
+      <li><a href="./attributions.html">attributions</a></li>
+      <li><a href="#">team</a></li>
+      <li><a href="#">medals</a></li>
+    </ul>
+  </div>
+
+  <div id="first-page">
+    <div id="ship-background"></div>
+    <h1 id="top-title">interlab</h1>
+    <h2 id="slogan">slogan</h2>
+    <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
+    <!-- CONTENT OF FIRST PAGE -->
+    <div id="overview">
+      <h1>overview</h1>
+      <div id="o1">
+        <img src="../images/interlab/T--SYSU-Software--Untitled-2.png" alt="">
+        <p>
+          We are proud to be part of the interlab study. Although we are a Software Team, this never separate us from experiments and never extinguish our passions for contributing our efforts for iGEM and Synthetic biology community.
+        </p>
+      </div>
+      <div id="o2">
+        <img src="../images/interlab/T--SYSU-Software--Untitled-3.png" alt="">
+        <p> 
+          This year, Interlab study provide detailed protocol to eliminate as much difference as they can, and find a way to make OD/FI measurement conducted by different machine comparable. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pages">
+    <!-- DEFINE TABS HERE -->
+    <div class="mid-nav-card">
+      <div class="nav-tabs">
+        <div class="mid-nav-tab">Experiment design</div>
+        <div class="mid-nav-tab" style="padding-right: 5.2em">Materials and Methods</div>
+        <div class="mid-nav-tab">Results</div>
+      </div>
+    </div>
+
+    <!-- DEFINE PAGES CORRESPOINDING TO EACH TAB HERE -->
+    <div class="tab-page" corresponding-tab="Experiment design">
+      <div class="epblk">
+        <p>
+          Eight different plasmids, Positive Control (BBa_I20270), Negative Control (BBa_R0040), Device 1 (BBa_J364000), Device 2 (BBa_J364001), Device 3 (BBa_J364002), Device 4 (BBa_J364003), Device 5 (BBa_J364004), Device 6 (BBa_J364005) were transformed into Escherichia coli DH5α, which were inoculated on LB plate with chloramphenicol (cmr). After an overnight cultivation, single colonies was picked to keep cultivating. After 6 hours cultivation, Colony PCR was conducted to test if the plasmids were transformed successfully. And the colonies were moved into liquid cultures (LB medium) and cultivated overnight. Liquid cultures were diluted with LB medium until the value of OD600 reached 0.02. Then we took out 500 μL samples from the cultures every 2 hour (t=0, 2, 4, 6h). At last, we measured OD600 and fluorescence of all samples.
+        </p>
+      </div>
+    </div>
+    <div class="tab-page" corresponding-tab="Materials and Methods">
+      <div class="matblk">
+        <h4>Growth Conditions</h4>
+        <p>
+          The bacteria were cultivated in Lysogeny Broth(LB) plate with chloramphenicol added when doing transformation. The plates were kept at 37°C. Colonies we picked were grown in 5ml LB medium with chloramphenicol. Afterwards, they were kept at 37°C and 220 rpm shaking frequency. We used 5ml LB medium and chloramphenicol to target OD600 of 0.02.
+        </p>
+      </div>
+      <div class="matblk">
+        <h4>Strains &amp Devices Transformed</h4>
+        <p>
+          We used Escherichia coli strain DH5α cells for transformation. Three devices and two controls are all provided by iGEM HQ as follows:
+          <ul>
+            <li>Positive Control (BBa_I20270)</li>
+            <li>Negative Control (BBa_R0040)</li>
+            <li>Device 1 (BBa_J364000)</li>
+            <li>Device 2 (BBa_J364001)</li>
+            <li>Device 3 (BBa_J364002)</li>
+            <li>Device 4 (BBa_J364003)</li>
+            <li>Device 5 (BBa_J364004)</li>
+            <li>Device 6 (BBa_J364005)</li>
+          </ul>
+        </p>
+      </div>
+      <div class="matblk">
+        <h4>Colony PCR &amp Gel electrophoresis</h4>
+        <p>Primer designed by choose 15bp on VF2 primer site &amp VR primer site. PCR conducted by standard procedure. Gel electrophoresis were conducted after PCR, with standard procedure. Gel photo was captured by UV imagery system provided by SYSU school of life science.</p>
+        <div class="center-img">
+          <img src="../images/interlab/T--SYSU-Software--marker.png" alt="marker" width="50%">
+          <img src="../images/interlab/T--SYSU-Software--round.png" alt="round" width="50%">
+        </div>
+      </div>
+      <div class="matblk">
+        <h4>Generating FITC Fluorescence Standard Curve by Using Plate Reader</h4>
+        <p>We have used 96-well plates to do the plate reader’s measurement. A serial dilution was performed to generate a FITC fluorescence standard curve. When measuring fluorescence, the excitation wavelength we set was 480nm(9), and emission wavelength was set at 535nm(20).
+        </p>
+      </div>
+      <div class="matblk">
+        <h4>Using LUDOX-S40 as A Single Point Reference</h4>
+        <p>
+          We used LUDOX-S40 to transform our absorbance data into standard OD600 measurement. Volumes of LUDOX was 100μl. We prepared a column of 4 wells containing 100 μl LUDOX and 4 wells containing water. The samples were measured using plate reader.
+        </p>
+      </div>
+      <div class="matblk">
+        <h4>Measuring Fluorescence &amp OD600 by Using Plate Reader</h4>
+        <p>
+          Colonies with devices tested by us were picked from the plates, then were cultured overnight in 5ml LB medium with chloramphenicol. The liquid cultures were diluted to target OD600=0.02. The fluorescence and OD600 of samples at 0,2,4, 6 hours were measured by using 96-well plate. The volumes of samples were 100 μl LB medium with chloramphenicol were used as blank
+        </p>
+      </div>
+    </div>
+    <div class="tab-page" corresponding-tab="Results">
+      <div class="resblk center-img">
+        <img src="../images/interlab/T--SYSU-Software--curve.png" alt="fig_1" width="65%">
+        <p class="img-ex">Fig 1. Fluorescien Standard Curve</p>
+      </div>
+      <div class="resblk bias-img">
+        <div class="fig_exp">
+          <img src="../images/interlab/T--SYSU-Software--od.png" alt="fig_2">
+          <p class="img-ex">Fig 2.  OD600 Measurement</p>
+        </div>
+        <p>
+          OD600
+          This value represents the concentration of bacteria in the medium. Due to the amount of the samples, the 0h phare failed to synchronize at the same value, and at this point the bacteria might already enter log phase. (Fig 2.)
+        </p>
+      </div>
+      <div class="resblk bias-img">
+        <div class="fig_exp">
+          <img src="../images/interlab/T--SYSU-Software--measure.png" alt="fig_3">
+          <p class="img-ex">Fig 3.  Fluorescence Measurement</p>
+        </div>
+        <p>
+          Fluorescein
+          The results are shown in the graph. The fluorescein level of Negative control, Device 1, 3, 5, 6 reach peak at the very beginning and then decrease remarkably in the next 2 hours. The positive control and Device 4 increase quit a lot at 2h but also decrease afterward. The Device 2 increase in a peace pace. (Fig 3.)
+        </p>
+      </div>
+      <div class="resblk bias-img">
+        <div class="fig_exp">
+          <img src="../images/interlab/T--SYSU-Software--measure2.png" alt="fig_4">
+          <p class="img-ex">Fig 4.  μM Fluorescein / OD600</p>
+        </div>
+        <p>
+          Attribution:
+          All our experiments were conducted in the professor Lu’s laboratory in School of life science, Sun Yat-sen University. They provided everything we need and answered every one of our doubts patiently. Here we present our appreciation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div id="contact-content">
+      <div class="contact-item">
+        <div class="contact-heading">contact</div>
+        <div class="contact-value">sysusoftware@126.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">address</div>
+        <div class="contact-value">135# Xin'gang Rd(W.), Sun Yat-sen University, Guangzhou, China</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">GET IN TOUCH</div>
+        <div class="contact-icons">
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
+  <script src="../script/mid-nav.js"></script>
+
+</body>
+</html>

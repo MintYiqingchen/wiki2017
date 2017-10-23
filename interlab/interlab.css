@@ -7,7 +7,7 @@
 } 
 body {
 	font-size: 62.5%; 
-}*
+}
 
 div#firstnav {
 	background-image: url(images/T--SYSU-Software--Rectangle-1.png);
@@ -116,8 +116,9 @@ div#back_1>h3{
 	background-image: url(images/T--SYSU-Software--navbg.png);
 	width: -webkit-fill-available;
 	height: 100px;
-	background-size: 100% 7em;
+	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: center top;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-around;
@@ -129,7 +130,7 @@ div#back_1>h3{
   	text-decoration: none;
   	color: #FFF;
   	font-weight: 400;
-  	padding-bottom: 1.5em;
+  	padding-bottom: 1em;
 }
 #secondnav li>a:hover,a:visited{
   	text-decoration: underline;
@@ -141,7 +142,19 @@ div#back_1>h3{
 #experiment,#material,#result p{
 	font-size: 2em;
 }
-
+.matblk,.resblk{
+	padding:2em 5em;
+}
+.matblk h4,img{
+	padding:1em 0;
+}
+.center-img{
+	text-align: center;
+}
+.bias-img{
+	display: flex;
+	align-items: center;
+}
 #footer{
 	background-image: url(images/T--SYSU-Software--tower1.png);
 	background-repeat: no-repeat;

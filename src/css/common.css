@@ -47,7 +47,7 @@ div#firstnav img{
 
 /* 以下是帆船大背景部分 */
 div#back_0{
-	background-image: url(../images/common/T--SYSU-Software-lighthouse.png); 
+	background-image: url(../images/common/T--SYSU-Software-background.png); 
 	background-repeat:no-repeat;
 	width: 100%;
 	background-size: contain;
@@ -84,4 +84,23 @@ div#back_1>#page_title{
     /* TODO */
 }
 
-/* and more */
+/* footer */
+#footer{
+	background-image: url(../images/common/T--SYSU-Software--lighthouse.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40em;
+	background-size: cover;
+}
+#footer ul{
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 10em;
+	left: 5em;
+}
+#footer li{
+	font-size: 2em;
+	color: rgb(150,150,150);
+	margin: 1em;
+}

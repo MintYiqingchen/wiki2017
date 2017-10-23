@@ -1,0 +1,24 @@
+.attribution-heading {
+    font-size: 3em;
+    color: #296592;
+}
+
+.attribution-content {
+    font-size: 2em;
+    margin: 0;
+}
+
+.intro-item {
+    margin-bottom: 2em;
+}
+
+.attribution-name {
+    font-size: 2em;
+    color: #296592;
+    margin-bottom: 0.5em;
+}
+
+.page-content {
+    width: 60%;
+    margin: 5em auto 3em;
+}

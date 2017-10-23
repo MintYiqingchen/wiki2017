@@ -1,0 +1,63 @@
+#overview-heading {
+    color: #296592;
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#overview-content {
+    text-align: center;
+    color: #4491E0;
+    font-size: 3.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.medal-content {
+    margin-bottom: 8em;
+    position: relative;
+}
+
+.medal-content:last-child {
+    margin-bottom: 0;
+}
+
+img.medal {
+    display: block;
+    margin: 0 auto 2em;
+    height: 15em;
+    width: 11em;
+}
+
+img.tick {
+    position: absolute;
+    width: 2.8em;
+    height: 2.4em;
+    left: -3.5em;
+}
+
+.requirement-item {
+    margin-bottom: 3em;
+}
+
+.requirement-item:last-child {
+    margin-bottom: 0;
+}
+
+.medal-requirement {
+    font-size: 2.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.medal-satisfy {
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.medal-satisfy ul {
+    list-style-position: inside;
+}

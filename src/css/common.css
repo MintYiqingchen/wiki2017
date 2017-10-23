@@ -45,16 +45,6 @@ div#firstnav img{
 	text-decoration: underline;
 }
 
-/* 以下是帆船大背景部分 */
-div#back_0{
-	background-image: url(../images/common/T--SYSU-Software--lighthouse.png);
-	background-repeat:no-repeat;
-	width: 100%;
-	background-size: contain;
-	display: flex;
-	flex-direction: column;
-}
-
 div#back_1 {
 	color: rgb(234, 194, 96);
 	width: -webkit-fill-available;
@@ -66,22 +56,111 @@ div#back_1 img#plane {
 	position: relative;
 	right: 25em;
 }
-div#back_1>#page_title{
-	font-size: 8em; /*80px*/
+#first-page {
+	position: relative;
+	width: 100%;
+	min-height: 700px;
+}
+
+#ship-background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/common/T--SYSU-Software--background.png");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+#top-title {
+	font-size: 8em;
+	padding-top: 2em;
+	color: #EAC260;
+	white-space: nowrap;
+	text-align: center;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 #slogan{
 	font-size: 5em;
+	margin-top: 1.2em;
+	color: #EAC260;
 	font-weight: bold;
+	text-align: center;
 	text-transform: uppercase;
 }
 #sysu-software-2017{
+	margin-top: 0.5em;
 	font-size: 2.5em; /*25px*/
+	color: #EAC260;
+	text-align: center;
 	font-weight: 200;
 }
 
 #mid-nav-card {
-    /* TODO */
+	height: 100px;
+	background-image: url("../images/common/T--SYSU-Software--mid-nav-bg.png");
+	background-size: cover;
+	background-position: center top;
+}
+#contact {
+	background-image: url("../images/common/T--SYSU-Software--lighthouse.png");
+	background-size: cover;
+	background-position: center top;
+	height: 450px;
+}
+
+.contact-item:first-child {
+	margin-top: 0;
+}
+
+.contact-item {
+	margin-top: 3em;
+}
+
+#contact-content {
+	padding: 50px 25% 50px 0;
+	width: 75%;
+	height: calc(100% - 100px);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contact-heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color: #969696;
+	margin-bottom: 0.8em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contact-value {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	text-decoration: underline;
+}
+
+.contact-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contact-icon:first-child {
+	margin-left: 0;
+}
+.contact-icon {
+	margin-left: 2.5em;
+}
+.contact-icon > img {
+	width: 5em;
+	height: 5em;
 }
 
 /* and more */

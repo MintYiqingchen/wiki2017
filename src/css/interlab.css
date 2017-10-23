@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#overview>h1{
+	color: rgb(41, 101, 146);
+	font-weight: 400;
+	font-size: 6em; /*60px*/
+	text-align: center;
+}
+#overview {
+	width: 65%;
+	margin:0 auto;
+}
+#o1,#o2{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	justify-content: center;
+	margin: 3rem;
+}
+#o1>p,#o2>p{
+	margin: 0 1em;
+}
+#o1 img,#o2 img{
+	height: 20rem;
+}
+#o2>img{
+	order: 2;
+}
+
+.tab-page {
+	font-size: 2rem;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.matblk,.resblk{
+	padding:2em 5em;
+}
+
+.matblk h4,img{
+	padding:1em 0;
+}
+
+.resblk>p{
+	padding:2.5rem;
+}
+.img-ex{
+	font-size: 2rem !important;
+}
+
+.fig_exp {
+	text-align: center;
+}
+.fig_exp img{
+	width: 400px;
+}
+.center-img{
+	text-align: center;
+}
+.bias-img{
+	display: flex;
+	align-items: center;
+}
+.bias-img div:nth-child(even) {
+	order: 2;
+}
+

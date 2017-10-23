@@ -3,12 +3,8 @@
     padding: 0;
     font-style: normal;
 }
-<<<<<<< HEAD
-html {
-	font-size: 62.5%;
-=======
 
-body {
+html {
     font-size: 62.5%;
 }
 
@@ -58,7 +54,6 @@ p {
     font-size: 1.3rem;
     line-height: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
->>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6
 }
 
 ul {
@@ -105,18 +100,10 @@ div#firstnav>ul {
     justify-content: flex-start;
     margin: 1.5em 0;
 }
-<<<<<<< HEAD
 div#firstnav li{
   	display: inline-block;
   	margin: 0.2em 1.5em;
   	text-align: center;
-=======
-
-div#firstnav li {
-    display: inline-block;
-    margin: 0.2em 2em;
-    text-align: center;
->>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6
 }
 
 div#firstnav img {
@@ -293,19 +280,9 @@ div#back_1 img#plane {
 }
 
 .contact-icon {
-<<<<<<< HEAD
 	margin-left: 2.5em;
 }
 .contact-icon > img {
 	width: 5em;
 	height: 5em;
 }
-=======
-    margin-left: 2.5em;
-}
-
-.contact-icon>img {
-    width: 5em;
-    height: 5em;
-}
->>>>>>> c4ba2fc68d071c7344ad8658047224548306abd6

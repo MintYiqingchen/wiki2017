@@ -11,70 +11,211 @@
 </head>
 
 <body>
-  <div id="firstnav">
-    <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
-    <ul>
-      <li><a href="#">project</a></li>
-      <li><a href="#">modeling</a></li>
-      <li><a href="#">human practice</a></li>
-      <li><a href="#">collabotation</a></li>
-      <li><a href="./interlab">interlab</a></li>
-      <li><a href="#">safety</a></li>
-      <li><a href="./attributions.html">attributions</a></li>
-      <li><a href="#">team</a></li>
-      <li><a href="#">medals</a></li>
-    </ul>
-  </div>
+  <div id="description">
+    <h1>Description</h1>
+    <div class="page-content">
+      <h2>WHAT IS S-Din?</h2>
+      <p>
+        ’S-Din integrated Search Engine and Design Platform developed specifically for Synthetic Biology. With the power of our Algorithm, we provide a one-stop solution to start Your project’
+      </p>
+      <p>
+        To be better,
+        </br>We don’t have to create more.
+        </br>We choose S-Din
+        </br><span>Make better project with S-Din.</span>
+      </p>
+    </div>
+    <div class="page-content">
+      <img src="../images/project/T--SYSU-Software--combo_chart.png" alt="">
+      <h2>WHY S-Din?</h2>
+      <div class="subsection">
+        <h3>Background</h3>
+        <p>
+          The science research is now facing an increasingly severe problem that most researches were ignored and not evaluated properly. Numbers of research articles are published every year. How to utilize the previous work to help solve maybe part of the current problem should be considered by everyone. 
+        </p>
+        <img src="../images/project/T--SYSU-Software--year.png" alt="">
+        <p>
+          This year, SYSU-Software try to change this situation in Synthetic Biology, exploring the treasures buried in the ocean of projects. 
+        </p>
+        <p>
+          To make full use of the works done by predecessors in Synthetic Biology. We divided it into two problems. 
+          <ol>
+            <li>How to find the project you need much faster and more accurate?</li>
+            <li>How to integrate the project you find into your own work?</li>
+          </ol>
+        </p>
+        <img src="T--SYSU-Software--thought.png" alt="">
+        <p>
+          Follow the standardization in Synthetic Biology, we standardize the previous projects, no matter came from articles or iGEM projects, into a New data format to display you a better result when using our search engine. </br>
+          <span>Network analysis:</span> designed to uncover the potential connection between projects, help user located exactly what they need.</br> 
+          <span>Customization:</span>The most exciting part of S-Din is that the search and the design are seamless. Once you find a project that might be useful, you can start editing in design platform as soon as you find it. Or you can just simply create one from scratch.</br>
+          <span>Extensible:</span> To ensure the database can be updated, new information can be added by man or ‘Spider’.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Inspiration</h3>
+        <p>
+          People complain, solving obstacles in project is easy, but deciding what to do is tolerance. Catching your muse is like grab fading smoke. <br>
+          We made S-Din further not only satisfying the need of starting a project but choosing a project.<br>
+          Therefore, the tree of words and interaction analysis are developed to inspire users. Part of the reason we made search and design seamlessly is to enable you to start design once you catch your muse.<br>
+          S-Din is mimetic, sounds exactly when you come up with a good idea. And here comes S-Din, to inspire you, to do more in Synthetic Biology.
+        </p>
+        <p>
+          <span>DONT BE LIMITED, Unleash your imagination. </span>
+          Want to solve Energy Crisis with Carbon dioxide? Search for circuits that can take in Carbon Dioxide and try to combine a energy generated circuit together to create your own circuits.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Why not Google?</h3>
+        <p>Undoubtedly, Google is the most powerful search engine in the world. Let’s see what happen when Google meets S-Din.</p>
+        <img src="../images/project/T--SYSU-Software--googlr.png">
+      </div>
+      <div class="subsection vedio-container">
+        <video src="" controls="controls"></video>
+      </div>
+    </div>
+    <div class="page-content">
+      <img src="../images/project/T--SYSU-Software--envelop.png" alt="">
+      <h2>Design</h2>
+      <div class="subsection">
+        <h3>Introduce</h3>
+        <p>
+          <span>Words from designer: </span>
+          Science research are facing a problem of how to utilising the previous researches, some of them are ignored, some of them are underestimated. We‘ve always wanted to make some difference in Synthetic Biology. With the help of our search engine, our users are able to view previous projects and works at a different angle and will be inspired by it. The gap between searching and designing are now seamless. Once you catch the muse, your design can be finished instantly.
+        </p>
+        <p>
+          This is a search engine built specifically for Synthetic Biology that allow you to view previous projects and works in a standardized style. While your search, we provide network analysis services to help find your results faster and inspire you. 
+          Once you find your preferred project, you are allowed to edit it simultaneously in our design platform. More parts can be added by the search tools provided on the left or you can just drag in a circuits that you collected in your favourite before. 
+        </p>
+        <p>
+          The design can be uploaded, downloaded or shared for collaborations between different accounts. Once you finish the design, you can run simulation program to check if it works well and then export it as plasmid and we will generate the sequences for synthesis.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Database</h3>
+        <p>
+          We collect data from many channels, most of the project data and all of the Parts data come from the iGEM Projects published on article are collected on various synthetic biology Journals, usage permissions are granted by the publication groups. <br>
+          Most of the data are collected by ‘Spider’ and corrected manually. All data of circuits are converted with manually with the help of our design platform.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Algorithm</h3>
+        <p>
+          The users of our software are all innovative researchers on Synthetic Biology, who are interested in many different biological fields. The purpose of our system is to recommend most related genetic parts to the users based on the research interest the users offer to our system. 
+        </p>
+        <p>
+          The information that we use to make recommendation is a database built by NLP and Random Walk which contains scores between each key word and each genetic part. Formally, it is a matrix , where is the number of key words and is the number of parts . The element at row, column is the score between the key word and genetic part , which reflects the connection between them(higher score means higher connection).
+        </p>
+        <p>
+          The overall strategy of our system is Collaborative Filtering , i.e. we first search the similar key words in our database of the unknown word offered by users and then recommend the genetic parts which are highly related to key words that we found to the users.
+        </p>
+        <p>
+          A natural question is how to find the most similar key words in our dataset of a given unknown word in an accurate and efficient way? Here is our general solution : To quantify the semantic similarities between words accurately ,we use technique in Deep Learning to convert words into numerical vectors and the cosine similarities between each vectors can represents the semantic similarities between words. To search the similar key words efficiently, we use the KD Tree Algorithm, a fast algorithm based on binary tree, to implement the K Nearest Neighbors strategy.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Network Analysis</h3>
+        <h4>Search analysis</h4>
+        <p>
+          In scientific journal, keywords are often required in published articles. Keywords can be used for indexing or searching, and offer faster way for readers to know a project main work and find their interests. 
+          <br>As matter of fact, in 2015, iGEM try to collect some keywords (http://2015.igem.org/Keywords) by asking teams to submit. 
+          <br>This year, a new data format is created and keywords enable our network analysis. We first used <span>Microsoft Text Analytics Service (<a>https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/</a>)</span>  to extract keywords from project wiki text in every. We only focus on the most frequent used keywords. By using machine learning, those keywords were converted to word vectors base on a semantic database. A network profiling relationship among keywords, projects and parts data is built and stored in the S-Din database. When searching something, related information will be provided to users base on the network analysis, which would spark a brand new idea expectedly.
+        </p>
 
-  <div id="first-page">
-    <div id="ship-background"></div>
-    <h1 id="top-title"><img src="../images/project/" alt="S-Din"></h1>
-    <h2 id="slogan">slogan here</h2>
-    <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
-    <!-- CONTENT OF FIRST PAGE -->
-    <p style="font-size: 5em; text-align: center;">overview!!!</p>
-  </div>
-
-  <div class="tab-pages">
-    <!-- DEFINE TABS HERE -->
-    <div class="mid-nav-card">
-      <div class="nav-tabs">
-        <div class="mid-nav-tab">blablabla</div>
-        <div class="mid-nav-tab">→→→|←←←</div>
-        <div class="mid-nav-tab">glaglagla</div>
+        <h4>Interaction analysis</h4>
+        <p>
+          When you click interaction analysis on a part on the design platform, any other parts or protein that might interact with the chosen part will be displayed which can be added on the platform. We build an interaction database ourselves, the sources of data come from iGEM Registry and STRING Database. Scores for parts come from the STRING Database.
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Simulation</h3>
+        <p>
+          The users of S-Din are all active and innovative researchers in Synthetic Biology , who come up with many interesting and new ideas in a wide range of fields. Our software help them achieve their creative goals by allowing them to combine various genetic parts together to form brand-new genetic circuits that may never exist before. To help the researchers have a deeper understanding of how the genetic system that they created works , we construct an ODE system to simulate the dynamic behaviors of the genetic system mathematically. The main challenge of simulation is the uncertainty of genetic circuits since the users can construct them arbitrarily. Therefore we build a rather general model capable of simulating various genetic circuits. 
+        </p>
+      </div>
+      <div class="subsection">
+        <h3>Plasmid Design</h3>
+        <p>
+          After your Design, you can choose to convert your circuits in to Plasmids (Customizable). We will generate the sequence for you to synthesis your own circuits.
+        </p>
       </div>
     </div>
 
-    <!-- DEFINE PAGES CORRESPOINDING TO EACH TAB HERE -->
-    <div class="tab-page" corresponding-tab="blablabla">
-      hello world
-    </div>
-    <div class="tab-page" corresponding-tab="glaglagla">
-      hi another world
-    </div>
-  </div>
-
-  <div id="contact">
-    <div id="contact-content">
-      <div class="contact-item">
-        <div class="contact-heading">contact</div>
-        <div class="contact-value">sysusoftware@126.com</div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-heading">address</div>
-        <div class="contact-value">135# Xin'gang Rd(W.), Sun Yat-sen University, Guangzhou, China</div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-heading">GET IN TOUCH</div>
-        <div class="contact-icons">
-          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
-          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
-          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
-          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
+    <div class="page-content">
+      <img src="../images/project/T--SYSU-Software--automatic.png">
+      <h2>Features</h2>
+      <div class="subsection">
+        <h3>Features</h3>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature1.png" alt="">
+          <h4>Seamless Search &amp Design</h4>
+          <p>
+            The moment you’re inspired by one of the projects, you can edit it instantly. Combining different function parts together to fulfil your need. Or you can do a de novo design.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature2.png" alt="">
+          <h4>Network analysis</h4>
+          <p>
+            We developed a series of algorithms to generate network composites of project, parts and keywords for analysis aiming to help user explore the treasure buried in the ocean of articles.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature3.png" alt="">
+          <h4>The Best Design Platform</h4>
+          <p>
+            The needs in Designing a Circuits were considered seriously to achieve the best user experience. Simple operation logic, beautiful UI.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature4.png" alt="">
+          <h4>The Best Design Platform</h4>
+          <p>
+            The needs in Designing a Circuits were considered seriously to achieve the best user experience. Simple operation logic, beautiful UI.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature5.png" alt="">
+          <h4> Inspiration</h4>
+          <p>
+            The tree of words<br>
+            Simply by clicking the words, you will see the subordinated words. After few repeats, you will finally get the projects that you want. This function is designed to help specify your need, help you understand your idea better. 
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature6.png" alt="">
+          <h4>Interaction analysis</h4>
+          <p>
+            This function is implanted in the design platform which will tell you the potential interaction parts with the chosen one. Use your imagination, think of how to utilize these interactions.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature7.png" alt="">
+          <h4>Simulation</h4>
+          <p>
+            Even though it’s difficult to develop a model that fit all the circuits, it worth a shoot. Our modeler developed a general model to allow user to simulate any circuits.
+          </p>
+        </div>
+        <div class="feature-div">
+          <img src="../images/project/T--SYSU-Software--feature8.png" alt="">
+          <h4>Techniques</h4>
+          <p>
+            Web design:
+            Back-end design: 
+          </p>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="page-content">
+      <img src="../images/project/T--SYSU-Software--biotech.png">
+      <h2>Wet-Lab Validation</h2>
+    </div>
+
+    <div class="page-content">
+      <img src="../images/project/T--SYSU-Software--edit_image.png">
+      <h2>Demonstrate (Proof of Robustness of software)</h2>
+    </div>
   <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
   <script src="../script/mid-nav.js"></script>
 

@@ -137,6 +137,11 @@ div#back_1 img#plane {
 	display: none;
 }
 
+.page-content {
+    width: 60%;
+    margin: 5em auto 3em;
+}
+
 #contact {
 	background-image: url("../images/common/T--SYSU-Software--lighthouse.png");
 	background-size: cover;

@@ -30,11 +30,19 @@
 .tab-page {
 	font-size: 2rem;
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 }
 
-.matblk,.resblk{
-	padding:2em 5em;
+.tab-page>div:nth-child(even){
+	background-image: url(../images/interlab/T--SYSU-Software--Rectangle-6.png);
+}
+.tab-page>div:nth-child(even)>div{
+	order: 2;
+}
+.matblk,.resblk,.epblk {
+	padding: 5rem 5rem;
+	margin: 5rem auto;
+	width: 65%;
 }
 
 .matblk h4,img{
@@ -61,7 +69,3 @@
 	display: flex;
 	align-items: center;
 }
-.bias-img div:nth-child(even) {
-	order: 2;
-}
-

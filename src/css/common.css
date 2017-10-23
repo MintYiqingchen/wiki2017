@@ -15,7 +15,8 @@ h4,
 h5,
 h6 {
     color: #296592;
-    margin-bottom: 0.8em;
+	margin-bottom: 0.8em;
+	margin-top: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,12 +27,12 @@ h1 {
 h2 {
     font-size: 3rem;
     text-transform: uppercase;
-    text-align: center;
+	text-align: center;
+	text-decoration: underline;
 }
 
 h3 {
     font-size: 2.5rem;
-    font-weight: normal;
 }
 
 h4 {
@@ -55,6 +56,10 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul {
+	list-style-position: inside;
+}
+
 .overview p {
     color: #4491E0;
     text-align: center;
@@ -69,6 +74,12 @@ p {
     margin-top: 0;
 }
 
+.paragraph p {
+	margin-top: 0.3em;
+}
+.paragraph p:first-child {
+	margin-top: 0;
+}
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
 
@@ -156,7 +167,8 @@ div#back_1 img#plane {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: serif;
+	font-family: serif;
+	margin-top: 0;
 }
 
 #slogan {

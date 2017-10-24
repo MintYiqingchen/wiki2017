@@ -152,7 +152,7 @@ div#back_1 img#plane {
 #first-page {
     position: relative;
     width: 100%;
-    min-height: 700px;
+    min-height: 400px;
 }
 
 #ship-background {
@@ -187,6 +187,7 @@ div#back_1 img#plane {
     text-align: center;
     text-transform: uppercase;
     font-family: serif;
+    text-decoration: none;
 }
 
 #sysu-software-2017 {
@@ -232,6 +233,9 @@ div#back_1 img#plane {
     display: none;
 }
 
+.fullseg {
+    width: 100%;
+}
 .page-content {
     width: 70%;
     margin: 5em auto 3em;

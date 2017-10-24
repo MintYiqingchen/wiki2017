@@ -11,10 +11,10 @@
 	width: 70%;
 }
 .fullseg:nth-child(odd) {
-	background-size: cover;
-	background-image: url(../images/project/T--SYSU-Software--purple.png);
-	background-repeat: no-repeat;
-	background-position: top center;
+	background: rgb(225,241,253)
+}
+.fullseg {
+	padding: 3rem 0;
 }
 
 .icon {

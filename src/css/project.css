@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#top-title>img {
+	width: 28%;
+}
+.page-content:first-child {
+	text-align: center;
+	margin: 0 auto;
+}
+.page-content:first-child img {
+	width: 70%;
+}
+.fullseg:nth-child(odd) {
+	background-size: cover;
+	background-image: url(../images/project/T--SYSU-Software--purple.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.icon {
+	width: 100px !important;
+}

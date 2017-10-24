@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "semantic-ui-menu",
+        "scope": null,
+        "escapedName": "semantic-ui-menu",
+        "name": "semantic-ui-menu",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\CodeWork\\wiki2017\\src\\lib"
+    ]
+  ],
+  "_cnpm_publish_time": 1502083837190,
+  "_from": "semantic-ui-menu@latest",
+  "_id": "semantic-ui-menu@2.2.12",
+  "_inCache": true,
+  "_location": "/semantic-ui-menu",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/semantic-ui-menu-2.2.12.tgz_1502083835990_0.04135435144416988"
+  },
+  "_npmUser": {
+    "name": "semantic-bot",
+    "email": "bot@semantic-ui.com"
+  },
+  "_npmVersion": "5.3.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "semantic-ui-menu",
+    "scope": null,
+    "escapedName": "semantic-ui-menu",
+    "name": "semantic-ui-menu",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/semantic-ui-menu/download/semantic-ui-menu-2.2.12.tgz",
+  "_shasum": "b9dada9d4eed05b5e31f47c17fdc32d0e9656beb",
+  "_shrinkwrap": null,
+  "_spec": "semantic-ui-menu",
+  "_where": "E:\\CodeWork\\wiki2017\\src\\lib",
+  "author": {
+    "name": "Jack Lukic",
+    "email": "jack@semantic-ui.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
+  },
+  "dependencies": {},
+  "description": "Single component release of menu",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "b9dada9d4eed05b5e31f47c17fdc32d0e9656beb",
+    "size": 18580,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/semantic-ui-menu/download/semantic-ui-menu-2.2.12.tgz"
+  },
+  "gitHead": "32f00735585c768e03abcad005f4cfce163afe5f",
+  "homepage": "http://www.semantic-ui.com",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "semantic-bot",
+      "email": "bot@semantic-ui.com"
+    }
+  ],
+  "name": "semantic-ui-menu",
+  "optionalDependencies": {},
+  "publish_time": 1502083837190,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semantic-Org/UI-Menu.git"
+  },
+  "title": "Semantic UI - Menu",
+  "version": "2.2.12"
+}

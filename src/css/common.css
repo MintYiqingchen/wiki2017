@@ -102,85 +102,40 @@ img.centered {
 
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
-div#firstnav {
-    background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
+#firstnav {
+    background-color: rgba(1, 124, 135, 0.8);
 }
 #firstnav a{
     color: white;
-}
-span.white{
-    color: white;
-}
-#firstnav>div:first-of-type {
-    width: 15%;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    display: inline-block;
-    text-align: center;
-}
-#firstnav>div:first-of-type img{
-    width: 80px;
-    margin: 0.8rem auto;
-    display: inline-block;
-}
-/*
-div#firstnav {
-    background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-div#firstnav>ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: flex-start;
-    margin: 1.5em 0;
-}
-
-div#firstnav li {
-    display: inline-block;
-    margin: 0.2em 1.5em;
-    text-align: center;
-    font-size: 1em;
-}
-
-div#firstnav img {
-    max-width: 100%;
-    height: 3em;
-    margin-left: 4vw;
-    margin-right: 2vw;
-    display: inline-block;
-}
-
-#firstnav li a {
-    color: white;
-    font-size: 1.5em;
-    font-style: bold;
-    text-transform: uppercase;
     text-decoration: none;
 }
-
-#firstnav li a:hover,
-a:active {
-    text-decoration: underline;
-}*/
-
-div#back_1 {
-    color: rgb(234, 194, 96);
-    width: -webkit-fill-available;
-    text-align: center;
-    padding: 8em 0;
+#sdin-link {
+    display: flex;
+    align-items: center; /* vertical align sdin icon */
+}
+#sdin-icon {
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: block;
+}
+#active-page {
+    background-color: rgba(0, 78, 84, 0.8);
+    border-width: 0;
 }
 
-div#back_1 img#plane {
-    height: 5em;
-    position: relative;
-    right: 25em;
+.page-category {
+    background-color: rgba(1, 124, 135, 0.8) !important;
+}
+
+#firstnav .page-category .item {
+    color: white !important;
+}
+
+#firstnav {
+    flex-wrap: wrap !important;
 }
 
 #first-page {
@@ -195,10 +150,10 @@ div#back_1 img#plane {
     top: 0;
     left: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-image: url("../images/common/T--SYSU-Software--background.png");
     background-size: cover;
-    background-position: center 99%;
+    background-position: center 98%;
 }
 
 #top-title {

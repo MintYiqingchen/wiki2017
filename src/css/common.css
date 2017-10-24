@@ -28,7 +28,6 @@ h2 {
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    text-decoration: underline;
 }
 
 h3 {
@@ -239,6 +238,10 @@ div#back_1 img#plane {
 .page-content {
     width: 70%;
     margin: 5em auto 3em;
+}
+
+.center {
+    text-align: center;
 }
 
 #contact {

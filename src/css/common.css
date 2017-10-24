@@ -155,7 +155,7 @@ div#back_1 img#plane {
     height: 700px;
     background-image: url("../images/common/T--SYSU-Software--background.png");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 99%;
 }
 
 #top-title {

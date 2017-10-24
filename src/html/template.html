@@ -8,9 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="../css/common.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/specific-style-for-each-page.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-dropdown/dropdown.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-menu/menu.css">
+  <link rel="stylesheet" type="text/css" href="../lib/transition.min.css">
 </head>
 
 <body>
+  <!--
   <div id="firstnav">
     <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
     <ul>
@@ -24,8 +28,33 @@
       <li><a href="./attributions.html">attributions</a></li>
       <li><a href="#">team</a></li>
     </ul>
+  </div>-->
+  
+  <div id="firstnav" class="ui fixed borderless ten menu">
+    <div class="item">
+      <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    </div>
+    <div class="ui dropdown item">
+      <span class="white text">Project</span> 
+      <div class="menu">
+          <a class="item">Project</a>
+          <a class="item">Description</a>
+          <a class="item">Design</a>
+          <a class="item">Features</a>
+          <a class="item">Wet-Lab Validation</a>
+          <a class="item">Demostrate</a>
+      </div>
+    </div>
+    <a href="#" class="item">modeling</a>
+    <a href="#" class="item">medals</a>
+    <a href="#" class="item">human practice</a>
+    <a href="#" class="item">collabotation</a>
+    <a href="./interlab.html" class="item">interlab</a>
+    <a href="#" class="item">safety</a>
+    <a href="./attributions.html" class="item">attributions</a>
+    <a href="#" class="item">team</a>
   </div>
-
+  
   <div id="first-page">
     <div id="ship-background"></div>
     <h1 id="top-title">title here</h1>
@@ -59,7 +88,25 @@
     </div>
   </div>
   <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
-  <script src="../script/mid-nav.js"></script>
-
+  <script type="text/javascript" src="../lib/transition.min.js"></script>
+  <script src="../lib/semantic-ui-dropdown/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.menu .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+      $('.ui.menu a.item')
+        .on('click', function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+          ;
+        })
+      ;
+    })
+  ;
+  </script>
 </body>
 </html>

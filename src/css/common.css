@@ -102,7 +102,28 @@ img.centered {
 
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
-
+div#firstnav {
+    background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
+}
+#firstnav a{
+    color: white;
+}
+span.white{
+    color: white;
+}
+#firstnav>div:first-of-type {
+    width: 15%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: inline-block;
+    text-align: center;
+}
+#firstnav>div:first-of-type img{
+    width: 80px;
+    margin: 0.8rem auto;
+    display: inline-block;
+}
+/*
 div#firstnav {
     background-image: url(../images/common/T--SYSU-Software--top-nav-bg.png);
     width: 100%;
@@ -147,7 +168,7 @@ div#firstnav img {
 #firstnav li a:hover,
 a:active {
     text-decoration: underline;
-}
+}*/
 
 div#back_1 {
     color: rgb(234, 194, 96);

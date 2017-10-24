@@ -21,7 +21,7 @@
 	line-height: 140%;
 	margin: 2rem 0;
 }
-.fullseg:nth-child(odd) {
+.fullseg:nth-child(even) {
 	background: rgb(225,241,253)
 }
 .fullseg {
@@ -36,6 +36,12 @@ span.bold{
 }
 p.center {
 	text-align: center;
+}
+p#stylize-p {
+	color: rgb(61, 131, 203);
+	font-weight: bold;
+	line-height: 150%;
+
 }
 .feature-div img {
 	width: 20% !important;
@@ -52,6 +58,8 @@ p.center {
 	background: white;
 	margin: 1rem 0.8rem;
 	padding: 2.5rem 1rem;
+	/*border: 1px solid #BFBFBF;*/
+	box-shadow: 2px 2px 3px 2px #aaa;
 }
 .feature-div p{
 	text-align: center;

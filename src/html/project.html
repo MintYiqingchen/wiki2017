@@ -60,14 +60,14 @@
         <div class="subsection">
           <h5>Background</h5>
           <p>
-            The science research is now facing an increasingly severe problem that most researches were ignored and not evaluated properly. Numbers of research articles are published every year. How to utilize the previous work to help solve maybe part of the current problem should be considered by everyone. 
+            The science research is now facing an increasingly severe problem that most researches were ignored and not evaluated properly. Numbers of research articles are published every year. How to utilize the previous work to help solve maybe part of the current problem should be considered by everyone.
           </p>
           <img src="../images/project/T--SYSU-Software--year.png" alt="">
           <p>
-            This year, SYSU-Software try to change this situation in Synthetic Biology, exploring the treasures buried in the ocean of projects. 
+            This year, SYSU-Software try to change this situation in Synthetic Biology, exploring the treasures buried in the ocean of projects.
           </p>
           <p>
-            To make full use of the works done by predecessors in Synthetic Biology. We divided it into two problems. 
+            To make full use of the works done by predecessors in Synthetic Biology. We divided it into two problems.
             <p class="center" style="text-align: center">
               <br>1.How to find the project you need much faster and more accurate?
               <br>2.How to integrate the project you find into your own work?
@@ -76,7 +76,7 @@
           <img src="T--SYSU-Software--thought.png" alt="">
           <p>
             Follow the standardization in Synthetic Biology, we standardize the previous projects, no matter came from articles or iGEM projects, into a New data format to display you a better result when using our search engine. <br><br>
-            <span class="bold">Network analysis:</span> designed to uncover the potential connection between projects, help user located exactly what they need.<br><br> 
+            <span class="bold">Network analysis:</span> designed to uncover the potential connection between projects, help user located exactly what they need.<br><br>
             <span class="bold">Customization:</span>The most exciting part of S-Din is that the search and the design are seamless. Once you find a project that might be useful, you can start editing in design platform as soon as you find it. Or you can just simply create one from scratch.<br><br>
             <span class="bold">Extensible:</span> To ensure the database can be updated, new information can be added by man or ‘Spider’.
           </p>
@@ -115,8 +115,8 @@
             Science research are facing a problem of how to utilising the previous researches, some of them are ignored, some of them are underestimated. We‘ve always wanted to make some difference in Synthetic Biology. With the help of our search engine, our users are able to view previous projects and works at a different angle and will be inspired by it. The gap between searching and designing are now seamless. Once you catch the muse, your design can be finished instantly.
           </p>
           <p>
-            This is a search engine built specifically for Synthetic Biology that allow you to view previous projects and works in a standardized style. While your search, we provide network analysis services to help find your results faster and inspire you. 
-            Once you find your preferred project, you are allowed to edit it simultaneously in our design platform. More parts can be added by the search tools provided on the left or you can just drag in a circuits that you collected in your favourite before. 
+            This is a search engine built specifically for Synthetic Biology that allow you to view previous projects and works in a standardized style. While your search, we provide network analysis services to help find your results faster and inspire you.
+            Once you find your preferred project, you are allowed to edit it simultaneously in our design platform. More parts can be added by the search tools provided on the left or you can just drag in a circuits that you collected in your favourite before.
           </p>
           <p>
             The design can be uploaded, downloaded or shared for collaborations between different accounts. Once you finish the design, you can run simulation program to check if it works well and then export it as plasmid and we will generate the sequences for synthesis.
@@ -125,7 +125,7 @@
         <div class="subsection">
           <h4>Database</h4>
           <p>
-            We collect data from many channels, most of the project data and all of the Parts data come from the iGEM Projects published on article are collected on various synthetic biology Journals, usage permissions are granted by the publication groups. 
+            We collect data from many channels, most of the project data and all of the Parts data come from the iGEM Projects published on article are collected on various synthetic biology Journals, usage permissions are granted by the publication groups.
           </p>
           <p>
             Most of the data are collected by ‘Spider’ and corrected manually. All data of circuits are converted with manually with the help of our design platform.
@@ -134,7 +134,7 @@
         <div class="subsection">
           <h4>Algorithm</h4>
           <p>
-            The users of our software are all innovative researchers on Synthetic Biology, who are interested in many different biological fields. The purpose of our system is to recommend most related genetic parts to the users based on the research interest the users offer to our system. 
+            The users of our software are all innovative researchers on Synthetic Biology, who are interested in many different biological fields. The purpose of our system is to recommend most related genetic parts to the users based on the research interest the users offer to our system.
           </p>
           <p>
             The information that we use to make recommendation is a database built by NLP and Random Walk which contains scores between each key word and each genetic part. Formally, it is a matrix , where is the number of key words and is the number of parts . The element at row, column is the score between the key word and genetic part , which reflects the connection between them(higher score means higher connection).
@@ -150,9 +150,9 @@
           <h4>Network Analysis</h4>
           <h5>Search analysis</h5>
           <p>
-            In scientific journal, keywords are often required in published articles. Keywords can be used for indexing or searching, and offer faster way for readers to know a project main work and find their interests. 
+            In scientific journal, keywords are often required in published articles. Keywords can be used for indexing or searching, and offer faster way for readers to know a project main work and find their interests.
           </p>
-          <p>As matter of fact, in 2015, iGEM try to collect some keywords (http://2015.igem.org/Keywords) by asking teams to submit. 
+          <p>As matter of fact, in 2015, iGEM try to collect some keywords (http://2015.igem.org/Keywords) by asking teams to submit.
           </p>
           <p>
             This year, a new data format is created and keywords enable our network analysis. We first used <span>Microsoft Text Analytics Service (<a href="https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/">https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/</a>)</span>  to extract keywords from project wiki text in every. We only focus on the most frequent used keywords. By using machine learning, those keywords were converted to word vectors base on a semantic database. A network profiling relationship among keywords, projects and parts data is built and stored in the S-Din database. When searching something, related information will be provided to users base on the network analysis, which would spark a brand new idea expectedly.
@@ -166,7 +166,7 @@
         <div class="subsection">
           <h4>Simulation</h4>
           <p>
-            The users of S-Din are all active and innovative researchers in Synthetic Biology , who come up with many interesting and new ideas in a wide range of fields. Our software help them achieve their creative goals by allowing them to combine various genetic parts together to form brand-new genetic circuits that may never exist before. To help the researchers have a deeper understanding of how the genetic system that they created works , we construct an ODE system to simulate the dynamic behaviors of the genetic system mathematically. The main challenge of simulation is the uncertainty of genetic circuits since the users can construct them arbitrarily. Therefore we build a rather general model capable of simulating various genetic circuits. 
+            The users of S-Din are all active and innovative researchers in Synthetic Biology , who come up with many interesting and new ideas in a wide range of fields. Our software help them achieve their creative goals by allowing them to combine various genetic parts together to form brand-new genetic circuits that may never exist before. To help the researchers have a deeper understanding of how the genetic system that they created works , we construct an ODE system to simulate the dynamic behaviors of the genetic system mathematically. The main challenge of simulation is the uncertainty of genetic circuits since the users can construct them arbitrarily. Therefore we build a rather general model capable of simulating various genetic circuits.
           </p>
         </div>
         <div class="subsection">
@@ -217,7 +217,7 @@
               <h5> Inspiration</h5>
               <p>
                 The tree of words<br>
-                Simply by clicking the words, you will see the subordinated words. After few repeats, you will finally get the projects that you want. This function is designed to help specify your need, help you understand your idea better. 
+                Simply by clicking the words, you will see the subordinated words. After few repeats, you will finally get the projects that you want. This function is designed to help specify your need, help you understand your idea better.
               </p>
             </div>
             <div class="feature-div">
@@ -239,7 +239,7 @@
               <h5>Techniques</h5>
               <p>
                 Web design:
-                Back-end design: 
+                Back-end design:
               </p>
             </div>
           </div>
@@ -247,7 +247,7 @@
       </div>
     </div>
     <div class="fullseg">
-      <div class="page-content"> 
+      <div class="page-content">
         <img src="../images/project/T--SYSU-Software--biotech.png" class="icon">
         <h3>Wet-Lab Validation</h3>
       </div>
@@ -259,8 +259,5 @@
       </div>
     </div>
   </div>
-  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
-  <script src="../script/mid-nav.js"></script>
-
 </body>
 </html>

@@ -15,8 +15,8 @@ h4,
 h5,
 h6 {
     color: #296592;
-	margin-bottom: 0.8em;
-	margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,8 +27,8 @@ h1 {
 h2 {
     font-size: 3rem;
     text-transform: uppercase;
-	text-align: center;
-	text-decoration: underline;
+    text-align: center;
+    text-decoration: underline;
 }
 
 h3 {
@@ -57,17 +57,22 @@ p {
 }
 
 ul {
-	list-style-position: inside;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 1.3rem;
 }
 
 .overview p {
     color: #4491E0;
     text-align: center;
     font-size: 1.5rem;
-	margin-top: 1em;
+    margin-top: 1em;
 }
+
 .overview {
-	margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .overview p:first-child {
@@ -75,11 +80,13 @@ ul {
 }
 
 .paragraph p {
-	margin-top: 0.3em;
+    margin-top: 0.3em;
 }
+
 .paragraph p:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
+
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
 
@@ -100,10 +107,12 @@ div#firstnav>ul {
     justify-content: flex-start;
     margin: 1.5em 0;
 }
-div#firstnav li{
-  	display: inline-block;
-  	margin: 0.2em 1.5em;
-  	text-align: center;
+
+div#firstnav li {
+    display: inline-block;
+    margin: 0.2em 1.5em;
+    text-align: center;
+    font-size: 1em;
 }
 
 div#firstnav img {
@@ -166,8 +175,8 @@ div#back_1 img#plane {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-	font-family: serif;
-	margin-top: 0;
+    font-family: serif;
+    margin-top: 0;
 }
 
 #slogan {
@@ -280,9 +289,10 @@ div#back_1 img#plane {
 }
 
 .contact-icon {
-	margin-left: 2.5em;
+    margin-left: 2.5em;
 }
-.contact-icon > img {
-	width: 5em;
-	height: 5em;
+
+.contact-icon>img {
+    width: 5em;
+    height: 5em;
 }

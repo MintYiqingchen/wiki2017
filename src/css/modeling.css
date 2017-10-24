@@ -1,0 +1,58 @@
+#keyword-part-img {
+    width: 60%;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#normalize-i {
+    height: 3em;
+}
+
+#eij-img {
+    width: 35%;
+}
+
+#bmv-img {
+    width: 35%;
+}
+
+#time-cond-img {
+    width: 50%;
+}
+#f-gamma-r-img {
+    width: 20%;
+}
+#normalize-k-img {
+    width: 25%;
+}
+#affi-img {
+    width: 80%;
+}
+#rij-img {
+    width: 40%;
+}
+#longest-img {
+    width: 90%;
+}
+
+#fx-gx-img {
+    width: 50%;
+}
+
+img.formula {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+img.inlined-formula {
+    height: 1.3em;
+    vertical-align: middle;
+}
+
+#law-of-cos-img {
+    width: 70%;
+}
+
+#law-of-cos2-img {
+    width: 70%;
+}

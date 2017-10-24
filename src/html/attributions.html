@@ -5,25 +5,96 @@
   <title>Attributions</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../lib/semantic-ui-dropdown/dropdown.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-menu/menu.css">
+  <link rel="stylesheet" type="text/css" href="../lib/transition.min.css">
   <link href="../css/common.css" rel="stylesheet">
   <link href="../css/attributions.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="../lib/bootstrap.min.css"> -->
 </head>
 
 <body>
-  <div id="firstnav">
-    <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
-    <ul>
-      <li><a href="./project.html">project</a></li>
-      <li><a href="#">modeling</a></li>
-      <li><a href="#">medals</a></li>
-      <li><a href="#">human practice</a></li>
-      <li><a href="#">collabotation</a></li>
-      <li><a href="./interlab.html">interlab</a></li>
-      <li><a href="#">safety</a></li>
-      <li><a href="./attributions.html">attributions</a></li>
-      <li><a href="#">team</a></li>
-    </ul>
+  <div id="firstnav" class="ui fixed collapsed borderless ten menu">
+    <a id="sdin-link" href="#">
+      <img id="sdin-icon" src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    </a>
+
+    <div class="ui simple dropdown item page-nav">
+      <a href="./project.html" class="page-link">Project</a>
+      <div class="menu page-category">
+        <a href="#" class="item">Description</a>
+        <a href="#" class="item">Another Heading</a>
+        <a href="#" class="item">Third Heading</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./modeling.html" class="page-link">Modeling</a>
+      <div class="menu page-category">
+        <a href="./modeling.html#overview" class="item">Overview</a>
+        <a href="./modeling.html#recommendation-system" class="item">Recommendation System</a>
+        <a href="./modeling.html#simulation" class="item">Simulation for General Genetic Circuits</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./medal.html" class="page-link">Medals</a>
+      <div class="menu page-category">
+        <a href="./medal.html#overview" class="item">Overview</a>
+        <a href="./medal.html#bronze" class="item">Bronze</a>
+        <a href="./medal.html#silver" class="item">Silver</a>
+        <a href="./medal.html#gold" class="item">Gold</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Human Practice</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Collaboration</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./interlab.html" class="page-link">Interlab</a>
+      <div class="menu page-category">
+        <a href="./interlab.html#overview" class="item">Overview</a>
+        <a href="./interlab.html#experiment-design" class="item">Experiment Design</a>
+        <a href="./interlab.html#material-and-methods" class="item">Material and Methods</a>
+        <a href="./interlab.html#results" class="item">Results</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Safety</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav" id="active-page">
+      <a href="./attributions.html" class="page-link">Attributions</a>
+      <div class="menu page-category">
+        <a href="./attributions.html#overview" class="item">Overview</a>
+        <a href="./attributions.html#group-structure" class="item">Group Structure</a>
+        <a href="./attributions.html#attribution-in-project" class="item">Attribution in Project</a>
+        <a href="./attributions.html#journey-planning" class="item">Journey Planning and Financing</a>
+        <a href="./attributions.html#acknowledgements" class="item">Acknowledgements</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Team</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
   </div>
 
   <div id="first-page">
@@ -33,17 +104,17 @@
     <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
     <!-- CONTENT OF FIRST PAGE -->
     <div class="page-content">
-      <h2 class="attribution-heading">Overview</h2>
-        <div class="overview">
-          <p>Part of the team have worked together long before the initiation of the project. We held each other’s back, pushing our own limit to bringing every one of our imagination into reality. All the team members did their job perfectly with passions.</p>
-          <p> This project was supported by School of Life Science, SUN Yat-Sen University. We thank our principal investigators who provided insight and expertise that greatly assisted the project.</p>
-          <p> We thank Professor Lu YongJun and his Lab for providing experiment material and assistance to help us finish our Interlab and Wet-lab validation.</p>
-          <p> For every institutions and individuals that have offered us any kind of assistance, here we present our sincerely gratitude.</p>
-        </div>
+      <h2 id="overview" class="attribution-heading">Overview</h2>
+      <div class="overview">
+        <p>Part of the team have worked together long before the initiation of the project. We held each other’s back, pushing our own limit to bringing every one of our imagination into reality. All the team members did their job perfectly with passions.</p>
+        <p> This project was supported by School of Life Science, SUN Yat-Sen University. We thank our principal investigators who provided insight and expertise that greatly assisted the project.</p>
+        <p> We thank Professor Lu YongJun and his Lab for providing experiment material and assistance to help us finish our Interlab and Wet-lab validation.</p>
+        <p> For every institutions and individuals that have offered us any kind of assistance, here we present our sincerely gratitude.</p>
+      </div>
     </div>
 
     <div class="page-content">
-      <h2>group structure</h2>
+      <h2 id="group-structure">group structure</h2>
       <div class="group-intro">
         <h3 class="attribution-heading">Biology Group</h3>
         <div class="intro-item">
@@ -148,7 +219,7 @@
           <p class="attribution-content">UI design of Bio-rescue Game, Poster, Wiki designer.</p>
         </div>
       </div>
-      <h2>attribution in project</h2>
+      <h2 id="attribution-in-project">attribution in project</h2>
 
       <p>Biology group and program development group discuss with the idea of the project in the first place. The Logic design is accomplished by biology group and the UI design is accomplished by Design Group. ZHENG Shucheng is responsible for the front-end of the software, ZHANG Jiawei, WANG Xiaoxi and Li Xiang were responsible for the back-end of the software, XUE Mingqi finished the GAME Bio-Rescue.</p>
       <h3>S-Din</h3>
@@ -255,14 +326,14 @@
         <p>Guo Yadi and Cai Peiqin were responsible for the designs of these art works.</p>
       </div>
 
-      <h2>Journey Planning and Financing</h2>
+      <h2 id="journey-planning">Journey Planning and Financing</h2>
       <div class="paragraph">
         <p>Li Tianqin helped us with transportation tickets and accommodations along with applying financial support.</p>
         <p>Zheng Yimin helped us with Visa issues and wrote the itinerary.</p>
         <p>Wang Ruijie is in charge of Financial management.</p>
       </div>
 
-      <h2>Acknowledgements</h2>
+      <h2 id="acknowledgements">Acknowledgements</h2>
       <div class="ack-school">
         <img src="../images/attributions/T--SYSU-Software--SYSU.png" alt="SYSU" class="school-icon">
         <p class="comment">Sun Yat-sen University</p>
@@ -343,6 +414,9 @@
       </div>
     </div>
   </div>
+  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/transition.min.js"></script>
+  <script src="../lib/semantic-ui-dropdown/dropdown.js"></script>
 </body>
 
 </html>

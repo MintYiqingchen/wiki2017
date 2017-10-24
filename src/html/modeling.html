@@ -6,24 +6,96 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../lib/semantic-ui-dropdown/dropdown.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-menu/menu.css">
+  <link rel="stylesheet" type="text/css" href="../lib/transition.min.css">
   <link href="../css/common.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/modeling.css">
 </head>
 
 <body>
-  <div id="firstnav">
-    <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
-    <ul>
-      <li><a href="./project.html">project</a></li>
-      <li><a href="#">modeling</a></li>
-      <li><a href="#">medals</a></li>
-      <li><a href="#">human practice</a></li>
-      <li><a href="#">collabotation</a></li>
-      <li><a href="./interlab.html">interlab</a></li>
-      <li><a href="#">safety</a></li>
-      <li><a href="./attributions.html">attributions</a></li>
-      <li><a href="#">team</a></li>
-    </ul>
+
+  <div id="firstnav" class="ui fixed collapsed borderless ten menu">
+    <a id="sdin-link" href="#">
+      <img id="sdin-icon" src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    </a>
+
+    <div class="ui simple dropdown item page-nav">
+      <a href="./project.html" class="page-link">Project</a>
+      <div class="menu page-category">
+        <a href="#" class="item">Description</a>
+        <a href="#" class="item">Another Heading</a>
+        <a href="#" class="item">Third Heading</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav" id="active-page">
+      <a href="./modeling.html" class="page-link">Modeling</a>
+      <div class="menu page-category">
+        <a href="./modeling.html#overview" class="item">Overview</a>
+        <a href="./modeling.html#recommendation-system" class="item">Recommendation System</a>
+        <a href="./modeling.html#simulation" class="item">Simulation for General Genetic Circuits</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./medal.html" class="page-link">Medals</a>
+      <div class="menu page-category">
+        <a href="./medal.html#overview" class="item">Overview</a>
+        <a href="./medal.html#bronze" class="item">Bronze</a>
+        <a href="./medal.html#silver" class="item">Silver</a>
+        <a href="./medal.html#gold" class="item">Gold</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Human Practice</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Collaboration</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./interlab.html" class="page-link">Interlab</a>
+      <div class="menu page-category">
+        <a href="./interlab.html#overview" class="item">Overview</a>
+        <a href="./interlab.html#experiment-design" class="item">Experiment Design</a>
+        <a href="./interlab.html#material-and-methods" class="item">Material and Methods</a>
+        <a href="./interlab.html#results" class="item">Results</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Safety</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./attributions.html" class="page-link">Attributions</a>
+      <div class="menu page-category">
+        <a href="./attributions.html#overview" class="item">Overview</a>
+        <a href="./attributions.html#group-structure" class="item">Group Structure</a>
+        <a href="./attributions.html#attribution-in-project" class="item">Attribution in Project</a>
+        <a href="./attributions.html#journey-planning" class="item">Journey Planning and Financing</a>
+        <a href="./attributions.html#acknowledgements" class="item">Acknowledgements</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Team</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
   </div>
 
   <div id="first-page">
@@ -33,7 +105,7 @@
     <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
     <!-- CONTENT OF FIRST PAGE -->
     <div class="page-content">
-      <h2>Overview</h2>
+      <h2 id="overview">Overview</h2>
       <div class="overview">
         <p>What make S-Din work are the algorithms behind it.</p>
         <p>Our model group worked very hard to develop the recommend and simulation algorithms to make S-Din possible in functioning as expect.</p>
@@ -44,7 +116,7 @@
   </div>
 
   <div class="modeling">
-    <h2>Recommendation System</h2>
+    <h2 id="recommendation-system">Recommendation System</h2>
     <div class="fullseg">
       <div class="page-content">
         <h3>Introduction</h3>
@@ -159,7 +231,7 @@
       </div>
       <div class="fullseg">
         <div class="page-content">
-          <h2>Simulation for General Genetic Circuits</h2>
+          <h2 id="simulation">Simulation for General Genetic Circuits</h2>
           <h3>Introduction</h3>
           <p>The users of S-Din are all active and innovative researchers in Synthetic Biology, who come up with many interesting and new ideas in a wide range of fields. Our software helps them achieve their creative goals by allowing them to combine various genetic parts together to form brand-new genetic circuits that may never exist before. To help the researchers have a deeper understanding of how the genetic system that they created works, we construct an ODE system to simulate the dynamic behaviors of the genetic system mathematically. The main challenge of simulation is the uncertainty of genetic circuits since the users can construct them arbitrarily. Therefore, we build a rather general model capable of simulating various genetic circuits.</p>
           <h3>Model</h3>
@@ -173,33 +245,37 @@
             <img src="../images/modeling/T--SYSY-Software--fx-gx.png" id="fx-gx-img" alt="" class="centered formula">
             <p></p>
             <h3>Imlementation</h3>
-            <p>We use Scipy, an efficient open source numerical module in Python, to give the numerical solutions to the ODE system.  Specifically, we use the odeint function in Scipy. For more information about odeint function, see <a href=" https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html">documentation of scipy</a></p>
+            <p>We use Scipy, an efficient open source numerical module in Python, to give the numerical solutions to the ODE system. Specifically, we use the odeint function in Scipy. For more information about odeint function, see <a href=" https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html">documentation of scipy</a></p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contact">
-      <div id="contact-content">
-        <div class="contact-item">
-          <div class="contact-heading">contact</div>
-          <div class="contact-value">sysusoftware@126.com</div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-heading">address</div>
-          <div class="contact-value">135# Xin'gang Rd(W.), Sun Yat-sen University, Guangzhou, China</div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-heading">GET IN TOUCH</div>
-          <div class="contact-icons">
-            <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
-            <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
-            <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
-            <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
-          </div>
+  <div id="contact">
+    <div id="contact-content">
+      <div class="contact-item">
+        <div class="contact-heading">contact</div>
+        <div class="contact-value">sysusoftware@126.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">address</div>
+        <div class="contact-value">135# Xin'gang Rd(W.), Sun Yat-sen University, Guangzhou, China</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">GET IN TOUCH</div>
+        <div class="contact-icons">
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
         </div>
       </div>
     </div>
+  </div>
+  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/transition.min.js"></script>
+  <script src="../lib/semantic-ui-dropdown/dropdown.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 #overview-heading {
     color: #296592;
     font-size: 5em;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -39,14 +38,12 @@ img.tick {
 
 .medal-requirement {
     font-size: 2.3em;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
     margin-bottom: 0.5em;
 }
 
 .medal-satisfy {
     font-size: 1.8em;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
 }
 

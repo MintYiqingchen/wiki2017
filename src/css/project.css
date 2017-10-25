@@ -10,7 +10,11 @@
 }
 
 #sysu-software-2017.project {
-    margin-bottom: 6em;
+	margin-bottom: 6em;
+}
+
+#top-title>img {
+	width: 28%;
 }
 
 #laptop {
@@ -79,16 +83,17 @@ p.center {
 }
 
 .feature-div {
-    width: 25%;
-    background: white;
-    margin: 1rem 0.8rem;
-    padding: 2.5rem 1rem;
-    /*border: 1px solid #BFBFBF;*/
-    box-shadow: 2px 2px 3px 2px #aaa;
+	width: 25%;
+	background: white;
+	margin: 1rem 0.8rem;
+	padding: 2.5rem 1rem;
+	/*border: 1px solid #BFBFBF;*/
+	box-shadow: 2px 2px 3px 2px #aaa;
+	word-break: normal;
+	word-wrap: break-word;
 }
-
-.feature-div p {
-    text-align: center;
+.feature-div p{
+	text-align: center;
 }
 
 #year-img {
@@ -96,5 +101,5 @@ p.center {
 }
 
 #google-meet-sdin-img {
-    width: 80%;
+	width: 80%;
 }

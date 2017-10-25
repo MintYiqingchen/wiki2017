@@ -76,16 +76,20 @@ li {
     line-height: 1.3em;
 }
 
-.overview p {
+#overview {
+    margin-bottom: 1.3em;
+}
+
+.overview > p {
     color: #296592;
     text-align: center;
     font-size: 1.5rem;
     margin-top: 1em;
 }
 
-.overview {
+div.overview {
     padding-bottom: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     border-bottom: solid grey 1px;
 }
 
@@ -102,21 +106,28 @@ section h2 {
     margin-bottom: 3rem;
 }
 
+section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+section:last-of-type {
+    margin-bottom: 4rem;
+}
+
 section.full {
     width: 100%;
 }
 
 section.plain {
-    width: 70%;
     padding-bottom: 3rem;
     margin-bottom: 3rem;
-    margin-left: auto;
-    margin-right: auto;
     border-bottom: 1px solid gray;
 }
 
-section.plain:last-child {
-    margin-bottom: 4em;
+section.plain:last-of-type {
     border: none;
 }
 
@@ -225,7 +236,7 @@ img.centered {
 
 #sysu-software-2017 {
     margin-top: 0.5em;
-    margin-bottom: 10em;
+    margin-bottom: 9em;
     font-size: 2.5em;
     /*25px*/
     color: #EAC260;

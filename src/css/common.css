@@ -4,6 +4,10 @@
     font-style: normal;
 }
 
+html {
+    font-size: 1rem !important; /* override semantic ui configuration*/
+}
+
 body {
     font-size: 62.5%;
 }
@@ -16,7 +20,7 @@ h5,
 h6 {
     color: #296592;
     margin-bottom: 0.8em;
-    margin-top: 0.8em;
+    margin-top: 0.8em !important;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -158,14 +162,14 @@ img.centered {
 
 #top-title {
     font-size: 8em;
-    padding-top: 2em;
+    padding-top: 3em;
     color: #EAC260;
     white-space: nowrap;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     font-family: serif;
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 #slogan {
@@ -219,9 +223,9 @@ img.centered {
 }
 
 #contact-content {
-    padding: 50px 25% 50px 0;
+    padding: 50px 12.5% 50px 12.5%;
     width: 75%;
-    height: calc(100% - 100px);
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -229,9 +233,10 @@ img.centered {
 
 .contact-heading {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.4rem;
     color: #969696;
-    margin-bottom: 0.8em;
+    padding-bottom: 0.8em;
+    line-height: 1em;
     text-transform: uppercase;
     text-align: center;
 }
@@ -239,7 +244,8 @@ img.centered {
 .contact-value {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.4rem;
+    line-height: 1em;
     color: white;
     text-decoration: underline;
 }

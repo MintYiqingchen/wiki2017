@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../css/common.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/specific-style-for-each-page.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-dropdown/dropdown.css">
+  <link rel="stylesheet" href="../lib/semantic-ui-menu/menu.css">
+  <link rel="stylesheet" type="text/css" href="../lib/transition.min.css">
+</head>
+
+<body>
+  <div id="firstnav" class="ui fixed borderless ten menu">
+    <div class="item">
+      <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    </div>
+    <div class="ui dropdown item">
+      <span class="white text">Project</span> 
+      <div class="menu">
+          <a class="item">Project</a>
+          <a class="item">Description</a>
+          <a class="item">Design</a>
+          <a class="item">Features</a>
+          <a class="item">Wet-Lab Validation</a>
+          <a class="item">Demostrate</a>
+      </div>
+    </div>
+    <a href="#" class="item">Modeling</a>
+    <a href="#" class="item">Medals</a>
+    <a href="#" class="item">Human practice</a>
+    <a href="#" class="item">Collabotation</a>
+    <a href="#" class="item">Interlab</a>
+    <a href="#" class="item">Safety</a>
+    <a href="#" class="item">Attributions</a>
+    <a href="#" class="item">Team</a>
+  </div>
+  
+  <div id="first-page">
+    <div id="ship-background"></div>
+    <h1 id="top-title">title here</h1>
+    <h2 id="slogan">slogan here</h2>
+    <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
+    <!-- CONTENT OF FIRST PAGE -->
+    <div class="page-content">
+      <p style="font-size: 5em; text-align: center;">overview!!!</p>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div id="contact-content">
+      <div class="contact-item">
+        <div class="contact-heading">contact</div>
+        <div class="contact-value">sysusoftware@126.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">address</div>
+        <div class="contact-value">135# Xin'gang Rd(W.), Sun Yat-sen University, Guangzhou, China</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-heading">GET IN TOUCH</div>
+        <div class="contact-icons">
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
+          <a href="#" class="contact-icon"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/transition.min.js"></script>
+  <script src="../lib/semantic-ui-dropdown/dropdown.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+      $('.ui.menu .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+      $('.ui.menu a.item')
+        .on('click', function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+          ;
+        })
+      ;
+    })
+  ;
+  </script>
+</body>
+</html>

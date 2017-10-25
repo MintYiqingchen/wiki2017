@@ -1,0 +1,37 @@
+.team-group {}
+
+.team-member {
+    width: auto;
+}
+
+.team-member .name {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.team-member .photo {
+    display: block;
+    margin: 0 auto 1em;
+    height: 27vw;
+}
+
+.member-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.member-line:last-child {
+    margin-bottom: 0;
+}
+
+#overlapped-line {
+    justify-content: space-between;
+    position: relative;
+}
+
+#overlapped-guy {
+    position: absolute;
+    left: calc(50% - 13vw);
+}

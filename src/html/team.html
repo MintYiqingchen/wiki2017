@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../css/specific-style-for-each-page.css">
   <link rel="stylesheet" href="../lib/semantic.min.css">
   <link href="../css/common.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/team.css">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
       <img id="sdin-icon" src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
     </a>
 
-    <div class="ui simple dropdown item page-nav" id="active-page">
+    <div class="ui simple dropdown item page-nav">
       <a href="./project.html" class="page-link">Project</a>
       <div class="menu page-category">
-        <a href="./project.html#description" class="item">Description</a>
-        <a href="./project.html#design" class="item">Design</a>
-        <a href="./project.html#feature" class="item">Features</a>
+        <a href="#" class="item">Description</a>
+        <a href="#" class="item">Another Heading</a>
+        <a href="#" class="item">Third Heading</a>
       </div>
     </div>
     <div class="ui simple dropdown item page-nav">
@@ -53,11 +53,9 @@
     <div class="ui simple dropdown item page-nav">
       <a href="#" class="page-link">Collaboration</a>
       <div class="menu page-category">
-        <a href="./collaboration.html#overview" class="item">Overview</a>
-        <a href="./collaboration.html#nju-china" class="item">NJU-China</a>
-        <a href="./collaboration.html#hkust" class="item">HUKST</a>
-        <a href="./collaboration.html#sysu-china" class="item">SYSU-CHINA</a>
-        <a href="./collaboration.html#scau-china" class="item">SCAU-CHINA</a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
       </div>
     </div>
     <div class="ui simple dropdown item page-nav">
@@ -70,10 +68,11 @@
       </div>
     </div>
     <div class="ui simple dropdown item page-nav">
-      <a href="./safety.html" class="page-link">Safety</a>
+      <a href="#" class="page-link">Safety</a>
       <div class="menu page-category">
-        <a href="./safety.html#dry-lab" class="item">Biosafety in Dry Lab</a>
-        <a href="./safety.html#wet-lab" class="item">Biosafety in Wet Lab</a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
       </div>
     </div>
     <div class="ui simple dropdown item page-nav">
@@ -86,14 +85,14 @@
         <a href="./attributions.html#acknowledgements" class="item">Acknowledgements</a>
       </div>
     </div>
-    <div class="ui simple dropdown item page-nav">
+    <div class="ui simple dropdown item page-nav" id="active-page">
       <a href="./team.html" class="page-link">Team</a>
       <div class="menu page-category">
         <a href="./team.html#biology-group" class="item">Biology Group</a>
         <a href="./team.html#programming-group" class="item">Programming Group</a>
         <a href="./team.html#modeling-group" class="item">Modeling Group</a>
         <a href="./team.html#design-group" class="item">Designer Group</a>
-      <div>
+      </div>
     </div>
   </div>
 
@@ -103,9 +102,64 @@
     <h2 id="slogan">slogan here</h2>
     <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
     <!-- CONTENT OF FIRST PAGE -->
-    <div class="page-content">
-      <p style="font-size: 5em; text-align: center;">overview!!!</p>
-    </div>
+    <section class="plain">
+      <h2 id="biology-group">Biology Group</h2>
+      <div class="team-group">
+        <div class="member-line">
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--laimengzhi.png" alt="" class="photo">
+            <p class="name">Lai Mengzhi</p>
+          </div>
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--litianqing.png" alt="" class="photo">
+            <p class="name">Li Tianqing</p>
+          </div>
+        </div>
+        <div class="member-line">
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--zhengyimin.png" alt="" class="photo">
+            <p class="name">Zheng Yimin</p>
+          </div>
+        </div>
+        <div class="member-line">
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--liangyuyun.png" alt="" class="photo">
+            <p class="name">Liang Yuyun</p>
+          </div>
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--lvyanrong.png" alt="" class="photo">
+            <p class="name">Lv Yanrong</p>
+          </div>
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--wangruijie.png" alt="" class="photo">
+            <p class="name">Wang Ruijie</p>
+          </div>
+        </div>
+        <div class="member-line" id="overlapped-line">
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--linjinran.png" alt="" class="photo">
+            <p class="name">Lin Jinran</p>
+          </div>
+          <div class="team-member" id="overlapped-guy">
+            <img src="../images/team/bio/T--SYSU-Software--wangziwei.png" alt="" class="photo">
+            <p class="name">Wang Ziwei</p>
+          </div>
+          <div class="team-member">
+            <img src="../images/team/bio/T--SYSU-Software--xiongjinghua.png" alt="" class="photo">
+            <p class="name">Xiong Jinghua</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plain">
+      <h2>Programming Group</h2>
+    </section>
+    <section class="plain">
+      <h2>Modeling Group</h2>
+    </section>
+    <section class="plain">
+      <h2>Designer Group</h2>
+    </section>
   </div>
 
   <div id="contact">

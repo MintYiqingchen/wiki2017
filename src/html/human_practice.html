@@ -6,39 +6,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="../css/common.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/specific-style-for-each-page.css">
-  <link rel="stylesheet" href="../lib/semantic-ui-dropdown/dropdown.css">
-  <link rel="stylesheet" href="../lib/semantic-ui-menu/menu.css">
-  <link rel="stylesheet" type="text/css" href="../lib/transition.min.css">
+  <link rel="stylesheet" href="../lib/semantic.min.css">
+  <link href="../css/common.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="firstnav" class="ui fixed borderless ten menu">
-    <div class="item">
-      <img src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
-    </div>
-    <div class="ui dropdown item">
-      <span class="white text">Project</span> 
-      <div class="menu">
-          <a class="item">Project</a>
-          <a class="item">Description</a>
-          <a class="item">Design</a>
-          <a class="item">Features</a>
-          <a class="item">Wet-Lab Validation</a>
-          <a class="item">Demostrate</a>
+  <div id="firstnav" class="ui fixed collapsed borderless ten menu">
+    <a id="sdin-link" href="#">
+      <img id="sdin-icon" src="../images/common/T--SYSU-Software--sdin-small.png" alt="logo">
+    </a>
+
+    <div class="ui simple dropdown item page-nav" id="active-page">
+      <a href="./project.html" class="page-link">Project</a>
+      <div class="menu page-category">
+        <a href="./project.html#description" class="item">Description</a>
+        <a href="./project.html#design" class="item">Design</a>
+        <a href="./project.html#feature" class="item">Features</a>
       </div>
     </div>
-    <a href="#" class="item">Modeling</a>
-    <a href="#" class="item">Medals</a>
-    <a href="#" class="item">Human practice</a>
-    <a href="#" class="item">Collabotation</a>
-    <a href="#" class="item">Interlab</a>
-    <a href="#" class="item">Safety</a>
-    <a href="#" class="item">Attributions</a>
-    <a href="#" class="item">Team</a>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./modeling.html" class="page-link">Modeling</a>
+      <div class="menu page-category">
+        <a href="./modeling.html#overview" class="item">Overview</a>
+        <a href="./modeling.html#recommendation-system" class="item">Recommendation System</a>
+        <a href="./modeling.html#simulation" class="item">Simulation for General Genetic Circuits</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./medal.html" class="page-link">Medals</a>
+      <div class="menu page-category">
+        <a href="./medal.html#overview" class="item">Overview</a>
+        <a href="./medal.html#bronze" class="item">Bronze</a>
+        <a href="./medal.html#silver" class="item">Silver</a>
+        <a href="./medal.html#gold" class="item">Gold</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Human Practice</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Collaboration</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./interlab.html" class="page-link">Interlab</a>
+      <div class="menu page-category">
+        <a href="./interlab.html#overview" class="item">Overview</a>
+        <a href="./interlab.html#experiment-design" class="item">Experiment Design</a>
+        <a href="./interlab.html#material-and-methods" class="item">Material and Methods</a>
+        <a href="./interlab.html#results" class="item">Results</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./safety.html" class="page-link">Safety</a>
+      <div class="menu page-category">
+        <a href="./safety.html#dry-lab" class="item">Biosafety in Dry Lab</a>
+        <a href="./safety.html#wet-lab" class="item">Biosafety in Wet Lab</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="./attributions.html" class="page-link">Attributions</a>
+      <div class="menu page-category">
+        <a href="./attributions.html#overview" class="item">Overview</a>
+        <a href="./attributions.html#group-structure" class="item">Group Structure</a>
+        <a href="./attributions.html#attribution-in-project" class="item">Attribution in Project</a>
+        <a href="./attributions.html#journey-planning" class="item">Journey Planning and Financing</a>
+        <a href="./attributions.html#acknowledgements" class="item">Acknowledgements</a>
+      </div>
+    </div>
+    <div class="ui simple dropdown item page-nav">
+      <a href="#" class="page-link">Team</a>
+      <div class="menu page-category">
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+        <a href="#" class="item"></a>
+      </div>
+    </div>
   </div>
-  
+
   <div id="first-page">
     <div id="ship-background"></div>
     <h1 id="top-title">title here</h1>
@@ -72,25 +127,6 @@
     </div>
   </div>
   <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
-  <script type="text/javascript" src="../lib/transition.min.js"></script>
-  <script src="../lib/semantic-ui-dropdown/dropdown.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
-      $('.ui.menu .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-      $('.ui.menu a.item')
-        .on('click', function() {
-          $(this)
-            .addClass('active')
-            .siblings()
-            .removeClass('active')
-          ;
-        })
-      ;
-    })
-  ;
-  </script>
+  <script src="../lib/semantic.min.js"></script>
 </body>
 </html>

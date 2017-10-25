@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1440px) {
-	
-}
 #top-title>img {
 	width: 28%;
 }
@@ -60,6 +57,8 @@ p#stylize-p {
 	padding: 2.5rem 1rem;
 	/*border: 1px solid #BFBFBF;*/
 	box-shadow: 2px 2px 3px 2px #aaa;
+	word-break: normal;
+	word-wrap: break-word;
 }
 .feature-div p{
 	text-align: center;

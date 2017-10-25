@@ -146,12 +146,14 @@ section.plain:last-of-type {
     margin-top: 0;
 }
 
-img.centered {
-    display: block;
+div.centered {
     margin-left: auto;
     margin-right: auto;
 }
 
+img.middle {
+    width: 50%;
+}
 .blue-shadowed {
     box-shadow: 10px 10px 20px rgb(214, 232, 239)
 }

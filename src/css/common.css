@@ -147,7 +147,8 @@ section.plain:last-of-type {
     margin-top: 0;
 }
 
-div.centered {
+img.centered {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }

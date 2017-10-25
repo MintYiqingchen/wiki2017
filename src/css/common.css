@@ -74,6 +74,7 @@ ol {
 li {
     font-size: 1.3rem;
     line-height: 1.3em;
+    text-align: left;
 }
 
 #overview {
@@ -87,10 +88,10 @@ li {
     margin-top: 1em;
 }
 
-div.overview {
+.overview {
     padding-bottom: 4rem;
     margin-bottom: 5rem;
-    border-bottom: solid grey 1px;
+    border-bottom: solid grey 1px !important;
 }
 
 .overview p:first-child {
@@ -270,7 +271,7 @@ img.centered {
 }
 
 .contact-item {
-    margin-top: 3em;
+    margin-top: 3.5em;
 }
 
 #contact-content {

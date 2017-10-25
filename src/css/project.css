@@ -1,66 +1,100 @@
 @charset "UTF-8";
+@media screen and (max-width: 1440px) {}
 
-@media screen and (max-width: 1440px) {
-	
+#top-title.project {
+    padding-top: 2.5em;
 }
-#top-title>img {
-	width: 28%;
+
+#top-title img {
+    width: 28%;
 }
-#description>div:first-child {
-	text-align: center;
-	margin: 0 auto;
+
+#sysu-software-2017.project {
+    margin-bottom: 6em;
 }
-.page-content img {
-	width: 70%;
+
+#laptop {
+    width: 55%;
+    margin-bottom: 4rem;
 }
+
+.subsection {
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.description.subsection:nth-of-type(odd),
+.feature.subsection:nth-of-type(odd) {
+    background-color: rgb(229, 243, 233);
+}
+
+.design.subsection:nth-of-type(odd) {
+    background-color: rgb(225, 240, 253);
+}
+
+.design.subsection:nth-of-type(even):last-child {
+    padding-bottom: 0;
+}
+
 .page-content {
-	text-align: center;
+    margin-top: 1em;
 }
-.page-content p{
-	text-align: left;
-	line-height: 140%;
-	margin: 2rem 0;
-}
-.fullseg:nth-child(even) {
-	background: rgb(225,241,253)
-}
-.fullseg {
-	padding: 3rem 0;
+
+.page-content p {
+    text-align: left;
+    line-height: 140%;
+    margin: 2rem 0;
 }
 
 .icon {
-	width: 8% !important;
+    width: 6vw !important;
+    display: block;
+    margin: 0 auto 3rem;
 }
-span.bold{
-	font-weight: bold;
-}
-p.center {
-	text-align: center;
-}
-p#stylize-p {
-	color: rgb(61, 131, 203);
-	font-weight: bold;
-	line-height: 150%;
 
+span.bold {
+    font-weight: bold;
 }
+
+p.center {
+    text-align: center;
+}
+
+#stylize-p {
+    color: rgb(61, 131, 203);
+    font-weight: bold;
+    line-height: 1.8em;
+}
+
 .feature-div img {
-	width: 20% !important;
+    width: 20% !important;
 }
 
 #feature-section {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .feature-div {
-	width: 25%;
-	background: white;
-	margin: 1rem 0.8rem;
-	padding: 2.5rem 1rem;
-	/*border: 1px solid #BFBFBF;*/
-	box-shadow: 2px 2px 3px 2px #aaa;
+    width: 25%;
+    background: white;
+    margin: 1rem 0.8rem;
+    padding: 2.5rem 1rem;
+    /*border: 1px solid #BFBFBF;*/
+    box-shadow: 2px 2px 3px 2px #aaa;
 }
-.feature-div p{
-	text-align: center;
+
+.feature-div p {
+    text-align: center;
+}
+
+#year-img {
+    width: 60%;
+}
+
+#google-meet-sdin-img {
+    width: 80%;
 }

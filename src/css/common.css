@@ -66,6 +66,7 @@ code {
 
 ul {
     list-style-position: inside;
+    margin-bottom: 2em;
 }
 ol {
     margin: 1em 0 1em 2em;

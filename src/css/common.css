@@ -160,6 +160,11 @@ img.middle {
     box-shadow: 10px 10px 20px rgb(214, 232, 239)
 }
 
+.fig-ep {
+    font-weight: 400; 
+    color: #909090;
+    font-size: 1.2rem;
+}
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */
 #firstnav {

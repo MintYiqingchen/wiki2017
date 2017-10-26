@@ -17,6 +17,12 @@
     height: 27vw;
 }
 
+#advisors .team-member .photo,
+#instructors .team-member .photo {
+    height: 20vw;
+    box-shadow: 0.3vw 0.3vw 0.6vw #999999;
+}
+
 .member-line {
     display: flex;
     flex-direction: row;

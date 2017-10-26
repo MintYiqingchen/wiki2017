@@ -157,8 +157,19 @@ img.centered {
 img.middle {
     width: 50%;
 }
-.blue-shadowed {
-    box-shadow: 10px 10px 20px rgb(214, 232, 239)
+
+img.blue-shadowed {
+    display: box;
+    box-shadow: 0.3vw 0.3vw 0.6vw rgb(214, 232, 239)
+}
+img.green-shadowed {
+    display: box;
+    box-shadow: 0.3vw 0.3vw 0.6vw rgb(216, 235, 220);
+}
+
+img.blue-background {
+    display: box;
+    box-shadow: 1vw 1vw #E1F1FD;
 }
 
 

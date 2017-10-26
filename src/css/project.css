@@ -93,6 +93,9 @@ p.center {
 	word-break: normal;
 	word-wrap: break-word;
 }
+.feature-div.special {
+    width: 80%;
+}
 .feature-div p{
 	text-align: center;
 }

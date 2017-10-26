@@ -155,7 +155,7 @@ img.centered {
 }
 
 img.middle {
-    width: 50%;
+    width: 60%;
 }
 
 img.blue-shadowed {
@@ -166,6 +166,10 @@ img.green-shadowed {
     display: box;
     box-shadow: 0.3vw 0.3vw 0.6vw rgb(216, 235, 220);
 }
+img.black-shadowed {
+    display: box;
+    box-shadow: 0.3vw 0.3vw 0.6vw #999999;
+}
 
 img.blue-background {
     display: box;
@@ -173,9 +177,11 @@ img.blue-background {
 }
 
 .fig-ep {
-    font-weight: 400; 
+    font-weight: 400;
     color: #909090;
-    font-size: 1.2rem;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    font-size: 1.1rem;
 }
 
 /* 顶部导航栏我统一使用firstnav，相应的在模板里写了 */

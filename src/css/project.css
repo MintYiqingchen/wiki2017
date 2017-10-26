@@ -33,7 +33,8 @@
     background-color: rgb(229, 243, 233);
 }
 
-.design.subsection:nth-of-type(odd) {
+.design.subsection:nth-of-type(odd),
+.wet-lab.subsection:nth-of-type(odd) {
     background-color: rgb(225, 240, 253);
 }
 

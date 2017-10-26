@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+p.bold {
+	font-weight: bold;
+}
+
+p.question {
+	color: #296592;
+	font-weight: bold;
+}

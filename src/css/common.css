@@ -327,7 +327,7 @@ img.blue-background {
 
 #contact-content {
     padding: 50px 12.5% 50px 12.5%;
-    width: 75%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -348,7 +348,8 @@ img.blue-background {
     font-size: 1.4rem;
     line-height: 1em;
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .contact-icons {

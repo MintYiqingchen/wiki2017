@@ -141,7 +141,7 @@
           </div>
         </div>
         <div class="member-line">
-          <div class="team-member" data-tooltip="你们报我名字了吗">
+          <div class="team-member" data-tooltip="Master the art of slipping water.">
             <img src="../images/team/bio/T--SYSU-Software--zhengyimin.png" alt="" class="photo">
             <p class="name">Zheng Yimin</p>
           </div>
@@ -161,7 +161,7 @@
           </div>
         </div>
         <div class="member-line" id="overlapped-line">
-          <div class="team-member" data-tooltip="Winner winner, chicken dinner.">
+          <div class="team-member" data-tooltip="The stars, my destination.">
             <img src="../images/team/bio/T--SYSU-Software--linjinran.png" alt="" class="photo">
             <p class="name">Lin Jinran</p>
           </div>
@@ -189,7 +189,7 @@
             <img src="../images/team/bio/T--SYSU-Software--kangziqi.png" alt="" class="photo">
             <p class="name">Kang Ziqi</p>
           </div>
-          <div class="team-member" data-tooltip="My name is Haochen Ni, a bright boy from SYSU. I am glad to have the opportunity to take part in iGEM with my partners. I will do my best and enjoy it.">
+          <div class="team-member wrapline" data-content="My name is Haochen Ni, a bright boy from SYSU.I am glad to have the opportunity to take part in iGEM with my partners. I will do my best and enjoy it." date-variation="basic" data-positon="top center">
             <img src="../images/team/bio/T--SYSU-Software--nihaochen.png" alt="" class="photo">
             <p class="name">Ni Haochen</p>
           </div>
@@ -231,11 +231,11 @@
       <h2>Modeling Group</h2>
       <div class="team-group">
         <div class="member-line">
-          <div class="team-member" data-tooltip="">
+          <div class="team-member" data-tooltip="Machine learning,I'm missing : )">
             <img src="../images/team/math/T--SYSU-Software--fuxingyu.png" alt="" class="photo">
             <p class="name">Fu Xingyu</p>
           </div>
-          <div class="team-member" data-tooltip="">
+          <div class="team-member" data-tooltip="Studing makes me happy : )">
             <img src="../images/team/math/T--SYSU-Software--daiwei.png" alt="Dai Wei" class="photo">
             <p class="name">Dai Wei</p>
           </div>
@@ -250,7 +250,7 @@
             <img src="../images/team/art/T--SYSU-Software--zhoutaoli.png" alt="" class="photo">
             <p class="name">Zhou Taoli</p>
           </div>
-          <div class="team-member" data-tooltip="">
+          <div class="team-member" data-tooltip="have no idea">
             <img src="../images/team/art/T--SYSU-Software--guoyadi.png" alt="" class="photo">
             <p class="name">Guo Yadi</p>
           </div>
@@ -573,6 +573,15 @@
   </div>
   <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
   <script src="../lib/semantic.min.js"></script>
+  <script type="text/javascript">
+    $('.team-member.wrapline').popup();
+    $('.team-member.wrapline').hover(function(){
+      $(this).popup('show');
+    });
+    $('.team-member.wrapline').blur(function(){
+      $(this).popup('hide');
+    })
+  </script>
 </body>
 
 </html>

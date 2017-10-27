@@ -53,9 +53,8 @@ section:last-of-type {
 }
 
 .page-content p {
-    text-align: left;
-    line-height: 140%;
     margin: 2rem 0;
+    text-align: left;
 }
 
 .icon {
@@ -101,6 +100,7 @@ p.center {
 }
 .feature-div.special {
     width: 80%;
+    padding: 2rem 2rem;
 }
 .feature-div p{
 	text-align: center;
@@ -134,13 +134,90 @@ img.screen-crop {
     margin-top: 3rem;
 }
 
-.double-pic .pic {
+.double-pic:not(.same-heigt) .pic {
     width: 45%;
 }
-.double-pic .pic img {
+.double-pic:not(.same-height) .pic img {
     width: 100%;
 }
 
+#validation-experiment .pic {
+    width: auto;
+}
+
+#validation-experiment .pic img {
+    height: 20vw;
+}
+
+
 #validation3 {
     margin-top: 0;
+}
+
+#installability p {
+    text-align: center;
+}
+
+#environment p {
+    text-align: center;
+}
+
+.requirement {
+    font-size: 1.4rem;
+    line-height: 3em;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 1em;
+}
+
+.requirement td {
+    border-color: #AAA;
+    border-width: 1px;
+    border-style: solid;
+    border-spacing: 1em;
+    padding: 0 0.5em;
+}
+
+.demo .explain {
+    text-align: center;
+}
+
+.demo .screenshot {
+    width: 80%;
+}
+
+.demo .step {
+    text-decoration: underline;
+}
+
+#interviews .intro {
+    color: #909090;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.interview .quote p {
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0.2px #DDD;
+}
+
+.interview {
+    margin-top: 3rem;
+}
+
+.interview:not(.last)::after {
+    content: "_";
+}
+
+#future-work p {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.5rem;
+}
+
+#more {
+    margin-top: 2.5em;
+    font-style: italic;
+    font-weight: 600;
 }

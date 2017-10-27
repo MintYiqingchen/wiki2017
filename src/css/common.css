@@ -192,7 +192,7 @@ img.blue-background {
     margin-bottom: 2.5em;
     font-size: 1.1rem;
     line-height: 1.5em;
-    text-align: center;
+    text-align: center !important;
 }
 
 .quote {

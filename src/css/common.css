@@ -78,7 +78,6 @@ ol {
 }
 
 li {
-    font-size: 1.3rem;
     line-height: 1.3em;
     text-align: left;
 }
@@ -204,6 +203,7 @@ img.blue-background {
 
 #firstnav {
     background-color: rgba(1, 124, 135, 0.8);
+    top: 16px;
 }
 
 #firstnav a {
@@ -366,7 +366,14 @@ img.blue-background {
     width: 5em;
     height: 5em;
 }
+/* editing for upload to 2017.igem*/
 
+div#top_title {
+    display: none !important;
+}
+div#top_menu_under .has_submenu{
+    font-size: 12px !important;
+}
 
 /* Webfont: LatoLatin-Bold */
 

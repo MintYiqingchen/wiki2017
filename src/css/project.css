@@ -14,7 +14,8 @@
 }
 
 #top-title>img {
-	width: 28%;
+    width: 28%;
+    filter: drop-shadow(0.04em 0.04em 0.15em rgb(28, 84, 117));
 }
 
 #laptop {
@@ -29,7 +30,8 @@
 }
 
 .description.subsection:nth-of-type(odd),
-.feature.subsection:nth-of-type(odd) {
+.feature.subsection:nth-of-type(odd),
+.demonstration.subsection:nth-of-type(even) {
     background-color: rgb(229, 243, 233);
 }
 
@@ -40,6 +42,10 @@
 
 .design.subsection:nth-of-type(even):last-child {
     padding-bottom: 0;
+}
+
+section:last-of-type {
+    margin-bottom: 0;
 }
 
 .page-content {
@@ -116,4 +122,25 @@ p.center {
     width: inherit;
     word-break: normal;
     word-wrap: break-word;
+}
+img.screen-crop {
+    width: 70%;
+}
+
+.double-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.double-pic .pic {
+    width: 45%;
+}
+.double-pic .pic img {
+    width: 100%;
+}
+
+#validation3 {
+    margin-top: 0;
 }

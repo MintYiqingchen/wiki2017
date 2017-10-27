@@ -278,6 +278,7 @@ img.blue-background {
     color: #EAC260;
     font-weight: bold;
     text-align: center;
+    text-shadow:0.03em 0.03em 0.15em #5d5231;
     text-transform: uppercase;
     font-family: serif;
     text-decoration: none;
@@ -289,6 +290,7 @@ img.blue-background {
     font-size: 2.5em;
     /*25px*/
     color: #EAC260;
+    text-shadow:0.03em 0.03em 0.15em #5d5231;
     text-align: center;
     font-weight: 200;
     font-family: Courier New, Courier, monospace;

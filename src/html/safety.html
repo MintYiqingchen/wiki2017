@@ -128,7 +128,7 @@
         Q1: What about the biosafety level of Parts recommended by S-Din?
       </p>
       <p>
-        A: There are two major parts in iGEM, First is to choose a safe enough Chassis to redesign the circuits. Second, we need a safe enough Parts as material to make a Gene blueprint that benefits human beings. Therefore, this year, iGEM safety community announced 2017 White List. （<a href="http://2017.igem.org/Safety/White_List">http://2017.igem.org/Safety/White_List</a>）
+        A: There are two major parts in iGEM, First is to choose a safe enough Chassis to redesign the circuits. Second, we need a safe enough Parts as material to make a Gene blueprint that benefits human beings. Therefore, this year, iGEM safety community announced 2017 White List. （<a href="http://2017.igem.org/Safety/White_List" target="_blank">http://2017.igem.org/Safety/White_List</a>）
       </p>
     </div>
     <div class="paragraph">
@@ -138,14 +138,14 @@
       <p>
         A: The source information is stored in our database including the original chassis and the adapted chassis. The database has been screened manually at the mid-late stage of development (Check Human Practice/ Project Assessment). Here are the results.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--pie1.png">
+      <img id="risk-group-img" class="centered middle" src="../images/safety/T--SYSU-Software--risk-group.png">
+      <p class="fig-ep">Figure 1: Risk group distribution of parts from S-Din's database.</p>
       <p>
-        Figure 1 shows the Chassis information and corresponding risk group in S-Din Database. It’s clear that all Parts with source information of Chassis belong to Risk Group 1&amp 2 which are granted to use in iGEM project. While the prohibited Risk Group 3&amp 4 won’t be displayed in S-Din. (iGEM Safety 2017 Risk Group <a href="http://2017.igem.org/Safety/Risk_Groups">http://2017.igem.org/Safety/Risk_Groups</a>)
+        Figure 1 shows the Chassis information and corresponding risk group in S-Din Database. It’s clear that all Parts with source information of Chassis belong to Risk Group 1&amp 2 which are granted to use in iGEM project. While the prohibited Risk Group 3&amp; 4 won’t be displayed in S-Din. (iGEM Safety 2017 Risk Group <a href="http://2017.igem.org/Safety/Risk_Groups" target="_blank">http://2017.igem.org/Safety/Risk_Groups</a>)
       </p>
       <p>
         Unfortunately, there are still many Parts without Chassis information due to the incompletion of Registry which will likely cause potential biosafety danger when our users designing new circuits. But we’re also lucky to find DSMZ Database to track down the original chassis of every part, none of them are tagged with Dangerous.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--table1.png">
       <p class="bold">
         Wrap up: Every Part whose source information is known come from Risk Group 1&amp2 that are relatively safe.
       </p>
@@ -159,7 +159,8 @@
       <p>
         There are numerous Parts in S-Din database. By manually screening all Parts in database, we found that there were only few that are tagged with ‘Red Flag’ (Fig. 2). Since we are dedicated to providing an open platform for synthetic biology, the user won’t be limited if they search for ‘Red Flag’ parts; However, users will be warned and advised not to do so once they attempt to design new circuits with ‘Red Flag’ parts.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--table2.png">
+      <img id="red-flag-img" class="centered middle" src="../images/safety/T--SYSU-Software--red-flag.png">
+      <p class="fig-ep">Figure 2: Red Flag part distribution in S-Din's database.</p>
       <p class="bold">
         Wrap up: Most of the Parts in S-Din are biosafety (without official ‘Red Flag’ tag), users are limited in using ‘Red Flag’ in our design platform.
       </p>
@@ -187,9 +188,10 @@
         </ul>
       </p>
       <p>
-        When the user starts designing circuits, they are allowed to add undefined new parts to S-Din database. Users are requested to fill in information Risk Group, meanwhile tagging the Chassis of parts.
+        When the user starts deeigning circuits, they are allowed to add undefined new parts to S-Din database. Users are requested to fill in information Risk Group, meanwhile tagging the Chassis of parts.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig3.png">
+      <img id="add-part-img" class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--add-part.png">
+      <p class="fig-ep">Figure 3: Users are requested to fill in information Risk Group of the part.</p>
     </div>
     <div class="paragraph">
       <p class="question">
@@ -201,7 +203,8 @@
       <p>
         If high-risk Parts are added, the safety level of surveillance system will be set as High risk(3), Warning will be given as the design might contain potential risk.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig4.png">
+      <img class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--warning.png">
+      <p class="fig-ep">Figure 4: Warning will be given if a part of High Risk (3) is added to the design.</p>
     </div>
     <div class="paragraph">
       <p class="question">
@@ -210,15 +213,16 @@
       <p>
         A: Yes! In the CORE (2015 SYSU-Software), an attempt was made that a safety tip was added after the end of design. This improvement is suggested by Prof. Yang Jianhua. We decided to inherit this idea so that we designed a more comprehensive User interaction.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig5.png">
+      <p>The user will be informed of a basic Biosafety statement at their first Log In. Terms of Use will be given in the link. Special thanks to Prof. He Zhumei on this improvement.</p>
+      <p>For more detail, see <a href="./statements.html#term-of-use" target="_blank">our statements page</a></p>
+      <br>
       <p>
-        Once 3-stars high-risk Part is added in the design circuits, S-Din will suggest user remove the Part besides the Warning from the surveillance system.
+        Once 3-stars high-risk Part is added in the design circuits, S-Din will suggest user remove the Part besides the Warning from the surveillance system. (as Figure 4)
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig6.png">
       <p>
         Meanwhile, the safety tip in CORE is inherited to S-Din to become the last protection to guide the user to design ‘safe genetic circuits’.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig7.png">
+      <img class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--save-design.png">
       <p>
         Generally, we did anything we could to keep users from Biosafety problems. But the users still need to responsible for their own design.
       </p>
@@ -227,7 +231,7 @@
 
   <section class="plain" id="wet-lab">
     <h2>Biosafety in Wet Lab</h2>
-    <h3 style="text-align: center">(Wet-lab validation & Interlab Study)</h3>
+    <h3 style="text-align: center">(Wet-lab validation &amp; Interlab Study)</h3>
     <div class="paragraph">
       <p class="question">
         Q1: How the genetic circuits were designed before the experiments and what about its safety level?
@@ -238,7 +242,8 @@
       <p>
         In the Interlab study, Standard safety protocol was conducted through the whole experiment.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig8.png">
+      <img class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--low-risk.png">
+      <p class="fig-ep">Figure 6: The surveillance system shows that the safety level of our circuit is low risk. (Upper right corner)</p>
     </div>
     <div class="paragraph">
       <p class="question">
@@ -261,7 +266,8 @@
       <p>
         A: Necessary safety protocol was conducted: All iGEMers were required to dress in experimental cloths, along with gloves, pants, masks etc.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig9.png">
+      <img class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--wangziwei.jpeg">
+      <p class="fig-ep">Figure 7: Our member Wang Ziwei is conducting the experiment. </p>
     </div>
     <div class="paragraph">
       <p class="question">
@@ -270,7 +276,8 @@
       <p>
         A: The safety operation protocol was conducted restrict.Used instruments, no matter one-use only or multi-use will be sterilized before deposit.All gel was recycled properly.Waste sorting is conducting in Lu Lab.
       </p>
-      <img class="center" src="../images/safety/T--SYSU-Software--fig10.png">
+      <img id="waste-box-img" class="centered middle black-shadowed" src="../images/safety/T--SYSU-Software--waste.jpeg">
+      <p class="fig-ep">Figure 8: The medical waste box in Lu's lab. </p>
     </div>
   </section>
 

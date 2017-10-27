@@ -73,7 +73,9 @@ p.center {
 
 #stylize-p {
     color: rgb(61, 131, 203);
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: italic;
     line-height: 1.8em;
 }
 

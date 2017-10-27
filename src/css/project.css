@@ -107,3 +107,13 @@ p.center {
 #google-meet-sdin-img {
 	width: 80%;
 }
+
+.ui.reveal.move .content {
+    background: white;
+    width: inherit;
+}
+.ui.reveal.move>.visible.content p{
+    width: inherit;
+    word-break: normal;
+    word-wrap: break-word;
+}

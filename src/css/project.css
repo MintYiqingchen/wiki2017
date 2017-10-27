@@ -14,7 +14,8 @@
 }
 
 #top-title>img {
-	width: 28%;
+    width: 28%;
+    filter: drop-shadow(0.04em 0.04em 0.15em rgb(28, 84, 117));
 }
 
 #laptop {

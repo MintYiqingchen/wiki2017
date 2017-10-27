@@ -1,16 +1,39 @@
 #human-flow-img {
     width: 50%;
 }
+
 #risk-group-img {
     width: 50%;
 }
+
 .ui.image.group {
-	height: 350px;
-	display: inline-block;
-	margin: 1rem 1rem;
+    height: 25vw;
+    display: inline-block;
+    margin: 1rem 1rem;
 }
-.flex-box.center{
-	justify-content: center;
-	align-items: center;
-	display: flex;
+
+.flex-box.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#add-part-img {
+    width: 40%;
+}
+
+#mini-lecture,
+#discussion {
+    width: 90%;
+}
+
+.double-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.snake.double-pic img {
+    height: 23vw;
 }

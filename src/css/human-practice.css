@@ -1,0 +1,16 @@
+#human-flow-img {
+    width: 50%;
+}
+#risk-group-img {
+    width: 50%;
+}
+.ui.image.group {
+	height: 350px;
+	display: inline-block;
+	margin: 1rem 1rem;
+}
+.flex-box.center{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}

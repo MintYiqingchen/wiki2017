@@ -56,3 +56,8 @@ img.inlined-formula {
 #law-of-cos2-img {
     width: 70%;
 }
+
+#truePage code {
+    border: none;
+    background: none;
+}

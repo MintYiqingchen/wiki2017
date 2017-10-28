@@ -90,8 +90,8 @@ li {
 }
 
 .overview {
-    padding-bottom: 4rem;
-    margin-bottom: 5rem;
+    padding-bottom: 4em;
+    margin-bottom: 5em;
     border-bottom: solid grey 1px !important;
 }
 
@@ -282,10 +282,10 @@ img.blue-background {
     text-decoration: none;
 }
 
-#sysu-software-2017 {
-    margin-top: 0.5rem;
-    margin-bottom: 9rem;
-    font-size: 2.5rem;
+#truePage #sysu-software-2017 {
+    margin-top: 0.5em;
+    margin-bottom: 9em;
+    font-size: 1.57rem;
     /*25px*/
     color: #EAC260;
     text-shadow: 0.03em 0.03em 0.15em #5d5231;
@@ -321,7 +321,7 @@ img.blue-background {
 }
 
 .contact-item {
-    margin-top: 3.5em;
+    margin-top: 2em;
 }
 
 #contact-content {
@@ -336,7 +336,7 @@ img.blue-background {
 .contact-heading {
     font-size: 1.4rem;
     color: #969696;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.6em;
     line-height: 1em;
     text-transform: uppercase;
     text-align: center;
@@ -361,12 +361,12 @@ img.blue-background {
 }
 
 .contact-icon {
-    margin-left: 2.5em;
+    margin-left: 1.8em;
 }
 
 .contact-icon>img {
-    width: 5em;
-    height: 5em;
+    width: 3.5em;
+    height: 3.5em;
 }
 /* editing for upload to 2017.igem*/
 

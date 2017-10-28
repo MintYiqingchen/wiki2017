@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/lib/semantic.min.css&amp;action=raw&amp;ctype=text/css-->
 
-<!--http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/css/common.css&action=raw&ctype=text/css-->
 <head>
-  <title>Page Title</title>
+  <title>Collaboration</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../css/specific-style-for-each-page.css">
-  <link rel="stylesheet" href="/wiki/index.php?title=Template:SYSU-Software/lib/semantic.min.css&amp;action=raw&amp;ctype=text/css">
-  <link href="/wiki/index.php?title=Template:SYSU-Software/css/common.css&amp;action=raw&amp;ctype=text/css" rel="stylesheet" rel="stylesheet">
+  <link rel="stylesheet" href="../css/collaboration.css">
+  <link rel="stylesheet" href="../lib/semantic.min.css">
+  <link href="../css/common.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +54,7 @@
         <a href="./human_practice.html#public-engagement" class="item">Public Engagement</a>
       </div>
     </div>
-    <div class="ui simple dropdown item page-nav">
+    <div class="ui simple dropdown item page-nav" id="active-page">
       <a href="./collaboration.html" class="page-link">Collaboration</a>
       <div class="menu page-category">
         <a href="./collaboration.html#overview" class="item">Overview</a>
@@ -118,16 +116,16 @@
 
   <div id="first-page">
     <div id="ship-background"></div>
-    <h1 id="top-title">title here</h1>
+    <h1 id="top-title">collaboration</h1>
     <h2 id="slogan">Synbio is just a S-Din away!</h2>
     <h3 id="sysu-software-2017">SYSU-Software 2017</h3>
-    <!-- CONTENT OF FIRST PAGE -->
     <div class="page-content">
-      <p style="font-size: 5em; text-align: center;">overview!!!</p>
+      <h2 id="overview">Overview</h2>
     </div>
   </div>
 
-  <div id="contact">
+
+    <div id="contact">
     <div id="contact-content">
       <div class="contact-item">
         <div class="contact-heading">contact</div>
@@ -140,35 +138,16 @@
       <div class="contact-item">
         <div class="contact-heading">GET IN TOUCH</div>
         <div class="contact-icons">
-          <a href="https://www.instagram.com/sysusf" class="contact-icon" target="_blank"><img src="http://2017.igem.org/wiki/images/5/5f/T--SYSU-Software--common_instagram.png" alt="instagram"></a>
-          <a href="https://twitter.com/SYSU_Software" class="contact-icon" target="_blank"><img src="http://2017.igem.org/wiki/images/4/41/T--SYSU-Software--common_twitter.png" alt="twitter"></a>
-          <a href="https://plus.google.com/u/0/108675007137699538539" class="contact-icon" target="_blank"><img src="http://2017.igem.org/wiki/images/5/5f/T--SYSU-Software--common_google.png" alt="google+"></a>
-          <a href="https://www.facebook.com/sysusoftware" class="contact-icon" target="_blank"><img src="http://2017.igem.org/wiki/images/b/b4/T--SYSU-Software--common_facebook.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/sysusf" class="contact-icon" target="_blank"><img src="../images/common/T--SYSU-Software--instagram.png" alt="instagram"></a>
+          <a href="https://twitter.com/SYSU_Software" class="contact-icon" target="_blank"><img src="../images/common/T--SYSU-Software--twitter.png" alt="twitter"></a>
+          <a href="https://plus.google.com/u/0/108675007137699538539" class="contact-icon" target="_blank"><img src="../images/common/T--SYSU-Software--google.png" alt="google+"></a>
+          <a href="https://www.facebook.com/sysusoftware" class="contact-icon" target="_blank"><img src="../images/common/T--SYSU-Software--facebook.png" alt="facebook"></a>
         </div>
       </div>
     </div>
   </div>
-  <script src="http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/lib/T--SYSU-Software--jquery.min.js&amp;action=raw&amp;ctype=text/javascript"></script>
-  <script src="http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/lib/semantic.min.js&amp;action=raw&amp;ctype=text/javascript"></script>
-  <script type="text/javascript">
-    $(function() {
-        var removeObj = document.getElementById('sideMenu');
-        removeObj.parentNode.removeChild(removeObj);
-        var removeOb = document.getElementById('top_title');
-        removeOb.parentNode.removeChild(removeOb);
-        var remove1 = document.getElementById('top_menu_under');
-        remove1.parentNode.removeChild(remove1);
-        $(".mw-body").css("margin-left", "0px");
-        $(".mw-body").css("width", "100%");
-        $(".mw-body").css("padding", "0");
-        /*var left_value = ($(window).width()-1280)/2+"px";*/
-/*                $('#globalWrapper').css("left", "7%");*/
-        $('#menuContainer').css("left", "0%");
-        $('#globalWrapper').css("padding","0px");
-     
-    });
-            
-  </script>
+  <script src="../lib/T--SYSU-Software--jquery.min.js"></script>
+  <script src="../lib/semantic.min.js"></script>
 </body>
 
 </html>

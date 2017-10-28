@@ -1,0 +1,19 @@
+http://2017.igem.org/wiki/images/c/c4/T--SYSU-Software--common_background.png
+
+http://2017.igem.org/wiki/images/b/b4/T--SYSU-Software--common_facebook.png
+
+http://2017.igem.org/wiki/images/5/5f/T--SYSU-Software--common_google.png
+
+http://2017.igem.org/wiki/images/5/5f/T--SYSU-Software--common_instagram.png
+
+http://2017.igem.org/wiki/images/a/af/T--SYSU-Software--common_lighthouse.png
+
+http://2017.igem.org/wiki/images/c/c7/T--SYSU-Software--common_sdin.png
+
+http://2017.igem.org/wiki/images/f/fb/T--SYSU-Software--common_tri.png
+
+http://2017.igem.org/wiki/images/4/41/T--SYSU-Software--common_twitter.png
+
+//-------- font --------------
+http://2017.igem.org/wiki/images/b/bc/T--SYSU-Software--font_LatoLatin-Bold.ttf
+

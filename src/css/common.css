@@ -9,14 +9,10 @@ html {
     /* override semantic ui configuration*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.realPage h1,h2,h3,h4,h5,h6 {
     color: #296592;
     margin-bottom: 0.8em;
+    border-bottom: none;
 }
 
 h3,
@@ -393,7 +389,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Bold.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Bold.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-Bold.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/b/bc/T--SYSU-Software--font_LatoLatin-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -409,7 +405,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-BoldItalic.woff') format('woff'), /* Modern Browsers */
-    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-BoldItalic.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/3/34/T--SYSU-Software--font_LatoLatin-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -425,7 +421,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Italic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Italic.woff') format('woff'), /* Modern Browsers */
-    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Italic.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/0/07/T--SYSU-Software--font_LatoLatin-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -441,7 +437,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Regular.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
-    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Regular.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/c/cd/T--SYSU-Software--font_LatoLatin-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -457,7 +453,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Semibold.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Semibold.woff') format('woff'), /* Modern Browsers */
-    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Semibold.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/e/e7/T--SYSU-Software--font_LatoLatin-Semibold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
     text-rendering: optimizeLegibility;
@@ -473,7 +469,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
-    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-BoldItalic.ttf') format('truetype');
+    url('http://2017.igem.org/wiki/images/d/d5/T--SYSU-Software--font_LatoLatin-SemiboldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 600;
     text-rendering: optimizeLegibility;

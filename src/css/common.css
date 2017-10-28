@@ -9,10 +9,6 @@ html {
     /* override semantic ui configuration*/
 }
 
-body {
-    font-size: 62.5%;
-}
-
 h1,
 h2,
 h3,
@@ -83,14 +79,14 @@ li {
 }
 
 #overview {
-    margin-bottom: 1.3em;
+    margin-bottom: 1.3rem;
 }
 
 .overview>p {
     color: #296592;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .overview {
@@ -263,7 +259,7 @@ img.blue-background {
 }
 
 #top-title {
-    font-size: 8em;
+    font-size: 5rem;
     padding-top: 3em;
     color: #EAC260;
     white-space: nowrap;
@@ -275,7 +271,7 @@ img.blue-background {
 }
 
 #slogan {
-    font-size: 5em;
+    font-size: 3.125rem;
     margin-top: 1.2em;
     color: #EAC260;
     font-weight: bold;
@@ -287,9 +283,9 @@ img.blue-background {
 }
 
 #sysu-software-2017 {
-    margin-top: 0.5em;
-    margin-bottom: 9em;
-    font-size: 2.5em;
+    margin-top: 0.5rem;
+    margin-bottom: 9rem;
+    font-size: 2.5rem;
     /*25px*/
     color: #EAC260;
     text-shadow: 0.03em 0.03em 0.15em #5d5231;
@@ -304,7 +300,7 @@ img.blue-background {
 
 .page-content {
     width: 70%;
-    margin-top: 5em;
+    margin-top: 8em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -413,7 +409,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-BoldItalic.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-BoldItalic.ttf') format('truetype');
+    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -429,7 +425,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Italic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Italic.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-Italic.ttf') format('truetype');
+    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -445,7 +441,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Regular.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-Regular.ttf') format('truetype');
+    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -461,7 +457,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-Semibold.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-Semibold.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-Semibold.ttf') format('truetype');
+    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-Semibold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
     text-rendering: optimizeLegibility;
@@ -477,7 +473,7 @@ div#sideMenu {
     src: url('../fonts/lato/LatoLatin-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/lato/LatoLatin-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */
     url('../fonts/lato/LatoLatin-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato/LatoLatin-SemiboldItalic.ttf') format('truetype');
+    url('http://2017.igem.org/File:T--SYSU-Software--font_LatoLatin-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 600;
     text-rendering: optimizeLegibility;

@@ -92,6 +92,7 @@ p.center {
 
 .feature-div {
 	width: 25%;
+    min-width: 300px;
 	background: white;
 	margin: 1rem 0.8rem;
 	padding: 2.5rem 1rem;

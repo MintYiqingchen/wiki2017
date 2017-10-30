@@ -380,6 +380,10 @@ div#content.mw-body{
 div#sideMenu {
     display: none !important;
 }
+
+div#mw-content-text>p:first-of-type {
+    display: none;
+}
 /* Webfont: LatoLatin-Bold */
 
 @font-face {

@@ -50,6 +50,7 @@
           <a href="http://2017.igem.org/Team:SYSU-Software/Model#overview" class="item">Overview</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Model#recommendation-system" class="item">Recommendation System</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Model#simulation" class="item">Simulation for General Genetic Circuits</a>
+          <a href="http://2017.igem.org/Team:SYSU-Software/Model#references" class="item">References</a>
         </div>
       </div>
       <div class="ui simple dropdown item page-nav">
@@ -117,7 +118,7 @@
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#designers" class="item">Designers</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#advisors" class="item">Advisors</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#instructors" class="item">Instructors</a>
-          <a href="http://2017.igem.org/Team:SYSU-Software/Team#calendar" class="item">Calendar</a>
+          <a href="http://2017.igem.org/Team:SYSU-Software/Team#notebook" class="item">Notebook</a>
         </div>
       </div>
       <div class="ui simple dropdown item page-nav">
@@ -140,10 +141,7 @@
       <div class="page-content">
         <h2 id="overview">Overview</h2>
         <div class="overview">
-          <p>What make S-Din work are the algorithms behind it.
-          Our model group worked very hard to develop the recommend and simulation algorithms to make S-Din possible in functioning as expect.
-          We combined the search and recommend algorithm together so the software can work faster.
-          Simulation algorithm are developed to cover situations which is any circuits designed by users.</p>
+          <p>What makes S-Din work are the clever algorithms behind it. Our modelling team uses many techniques e.g. Machine Learning, ODE to develop the Recommendation System and the Simulation System which help S-Din achieve state of the art performance. </p>
         </div>
       </div>
     </div>
@@ -160,12 +158,14 @@
         </div>
         <h3>Models used in the system</h3>
         <h4>Word2Vec Algorithm</h4>
+        <img src="http://2017.igem.org/wiki/images/5/52/T--SYSU-Software--model_Wordv.png" class="ui image middle centered">
         <div class="paragraph">
-          <p>Word2vec is an algorithm that produces word embedding , i.e. it converts a corpus of text into a high dimensional real vector space(in our case , the dimension is 400) and each word in the corpus is assigned to a vector in the vector space. If two words are similar semantically , then their will be close under cosine distance measure.</p>
+          <p>Word2vec is an algorithm that produces word embedding , i.e. it converts a corpus of text into a high dimensional real vector space(in our case , the dimension is 400) and each word in the corpus is assigned to a vector in the vector space. If two words are similar semantically , then they will be close under cosine distance measure.</p>
           <p>In our Recommendation System, we use gensim, an open source Python module focused on Natural Language Processing , to train our word2vec model and the corpus we use to feed the model is wikimedia, which can be downloaded from:<a href="https://dumps.wikimedia.org/" target="_blank">https://dumps.wikimedia.org/</a></p>
           <p>The reason why we use Word2vec is that it can distinguish the semantic meanings of words accurately by Deep Learning technique, which outperforms the traditional semantic analysis methods greatly.</p>
         </div>
         <h4>KD Tree Algorithm</h4>
+        <img class="ui image medium centered" src="http://2017.igem.org/wiki/images/1/17/T--SYSU-Software--model_kd.png">
         <div class="paragraph">
           <p>The KD Tree algorithm is rather efficient when searching for the most similar items with averaged time complexity<code>O(log(n))</code>,thus the users can get recommendation instantly after they enter their interested new word to our system.</p>
           <p>The KD Tree Algorithm consists of the following two parts:</p>
@@ -174,7 +174,7 @@
             <li>When the user enter a new word , we search the similar key words along the KD Tree that we constructed in step 1) . (Online)</li>
           </ol>
           <p>Note that KD Tree Algorithm is based on Euclidean distance measure , while in our case , we need to calculate the cosine distance of the word vectors. To solve this problem ,we normalize all the word vectors of key words before constructing KD Tree and normalize the word vector of new words offered by users before letting it travel along the constructed KD Tree. The reason behind the method is that by Law of Cosines:</p>
-          <img src="http://2017.igem.org/wiki/images/0/06/T--SYSU-Software--modeling_law-of-cos.png" alt="law of cosine" class="centered formula" id="law-of-cos-img">
+          <img src="http://2017.igem.org/wiki/images/6/6f/T--SYSU-Software--model_law-of-cos.png" alt="law of cosine" class="centered formula" id="law-of-cos-img">
           <p>while since <code>x<sup>1</sup>,x<sup>2</sup></code> are normalized, we have :</p>
           <img src="http://2017.igem.org/wiki/images/a/a8/T--SYSU-Software--modeling_law-of-cos2.png" alt="law of cosine" class="centered formula" id="law-of-cos2-img">
           <p>Now we see that the calculation of cosine distance between normalized vectors can be replaced by the calculation of Euclidean distance since they can determine each other in this normalization context.</p>
@@ -184,7 +184,7 @@
         <img src="http://2017.igem.org/wiki/images/c/c0/T--SYSU-Software--modeling_part-keyword.png" class="centered" alt="" id="keyword-part-img">
         <p>Random Walk with Restart(RWR) is an algorithm adapted from the PageRank algorithm and it focuses on characterizing the affiliation between each item. We treat the relation between key words and genetic parts as an undirected graph where nodes represent key words or parts and edges represent connection between words and parts. Imagine there is a walker travelling on the graph mentioned above and each time he faces two choices: 1) Randomly travelling along an edge connected to the current node. 2) Teleport to node K. After a long time of random travelling , the frequency the walker reaches each node represents the affiliation between each node and node K , which we use to characterize the relation between key words and parts. For more detailed mathematical formulation of PageRank, see: <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">wiki page of page rank</a></p>
 
-        <h3>Algorithm to construct the Recommendation System</h3>
+        <h3>Algorithms used in the Recommendation System</h3>
         <h4>Calculating affiliation between key words and parts</h4>
         <div class="paragraph">
           <p>We used random walk with restart to calculate the affiliation between key words and all parts in the dataset. The calculation is done by updating the probability vector iteratively ,once the probability vector is converged, it can be viewed as the affiliation between various parts and key words. Therefore, the higher the probability is, the closer the key word and part are.</p>
@@ -214,43 +214,43 @@
           <p>Since the first n components of <code>v</code> are the affiliation between key word <code>i</code> and the other key words which we are not interested , therefore we only keep the last m components of <code>v</code>, which reflects the affiliation between key word <code>i</code> and all the parts.</p>
         </div>
 
-        <h3>Build KD Tree of Keywords</h3>
+        <h4>Build KD Tree of Keywords</h4>
         <div class="paragraph">
           <p>Once the user enter a new word to our system, we need to search for similar key words efficiently , thus we build a KD Tree of key words to implement this function.</p>
           <p>Here is our Algorithm</p>
         </div>
-        <h4>Train word vector model</h4>
+        <h5>Train word vector model</h5>
         <div class="paragraph">
           <p>We feed our word vector model with Wikimedia corpus . After the training process is done, we have a model that can convert words into numerical vectors, i.e.</p>
           <img src="http://2017.igem.org/wiki/images/c/c0/T--SYSU-Software--modeling_f-gamma-r.png" id="f-gamma-r-img" alt="" class="centered formula">
           <p>where &Gamma; denoted the corpus space</p>
         </div>
-        <h4>Convert keywords into normalized vectors</h4>
+        <h5>Convert keywords into normalized vectors</h5>
         <div class="paragraph">
           <p>let <code>T</code> denotes the set of word vectors</p>
           <p><code>for</code> keyword <code>i</code> in <code>1 to N</code>:</p>
           <p><code>T</code>.append(<img id="normalize-i" class="inlined-formula" src="http://2017.igem.org/wiki/images/6/64/T--SYSU-Software--modeling_normalize-i.png" alt="f(i)/|f(i)|">)</p>
         </div>
-        <h4>Build KD Tree</h4>
+        <h5>Build KD Tree</h5>
         <p>We use the standard construction procedure to build KD Tree of set <code>T</code>. Details will be ignored here. For the people who are interested , we offered a link to wikipedia in section2.</p>
 
-        <h3>Collaborative Filtering</h3>
+        <h4>Collaborative Filtering</h4>
         <div class="paragraph">
           <p>This is the final step to construct our Recommendation System , overall we use collaborative filtering strategy to make prediction.</p>
           <p>Here is the algorithm</p>
         </div>
-        <h4>Transform users input</h4>
+        <h5>Transform users input</h5>
         <p>We get users input word <code>k</code>, we then convert it into normalized word vector <code>v</code>, i.e.</p>
         <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_normalize-k.png" alt="" id="normalize-k-img" class="centered formula">
-        <h4>Search K most similar keywords(KNN)</h4>
+        <h5>Search K most similar keywords(KNN)</h5>
         <p>Let <code>v</code> travel along the KD Tree in a way like binary search , we can end up with <code>K</code>(in our case , <code>K</code> is set to be 5) most similar key words(KNN) to the current word <code>k</code>.</p>
-        <h4>Make Recommendation</h4>
+        <h5>Make Recommendation</h5>
         <div class="paragraph">
           <p>We have calculated the affiliation between key words and parts which shall be used to guide our final recommendation. Let <code>p<sub>i</sub></code> denotes the connection between the <code>i</code>th part and the current word <code>k</code> , we calculate <code>p<sub>i</sub></code> by formula</p>
           <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_affiliation.png" alt="" id="affi-img" class="centered formula">
           <p>where <img src="http://2017.igem.org/wiki/images/f/f1/T--SYSU-Software--modeling_wn.png" alt="" class="inlined-formula"> denotes the <code>k</code> most similar key words</p>
           <p><code>Affiliation(w<sub>n</sub>, p<sub>i</sub>)</code>denotes the connection between <code>w<sub>i</sub></code> and the <code>i</code>th part and <code>distance(w<sub>i</sub>, k)</code> denotes the the Euclidean distance between the normalized word vectors of <code>w<sub>n</sub></code> and word <code>k</code>.</p>
-          <p>After the computation of <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_pi.png" alt="" class="inlined-formula">, we use heap sort algorithm to get <code>R</code> highest <code>p<sub>i</sub></code> and recommend to the users the corresponding parts.</p>
+          <p>After the computation of <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_pi.png" alt="" class="inlined-formula">, we use heap sort algorithm to get <code>R</code> highest <code>p<sub>i</sub></code> and recommend to the users the corresponding parts.Besides, we use exactly the same strategy to make recommendation of related projects to the users. For simplicity, we ignore the details here.</p>
         </div>
       </section>
 
@@ -261,7 +261,7 @@
         <h3>Model</h3>
         <div class="paragraph">
           <p>The interaction among the substances in genetic circuits can be characterized by a <code>n * n</code> relation matrix <code>R</code>, where <code>n</code> is number of substances. The entry in row <code>i</code> and column <code>j</code> has 3 possible values for 3 possible relations, i.e. </p>
-          <img src="http://2017.igem.org/wiki/images/c/c2/T--SYSU-Software--modeling_rij.png" id="rij-img" alt="" class="centered formula">
+          <img src="http://2017.igem.org/wiki/images/6/6c/T--SYSU-Software--model_rij.png" id="rij-img" alt="" class="centered formula">
           <p>Therefore , the <code>j</code>th column records all the impacts the system exerts to the <code>j</code>th substances.</p>
           <p>Let <code>x<sub>j</sub>(t)</code> denotes the concentration of substance <code>j</code> at time <code>t</code> , then we use the following ODE to characterize <code>x<sub>j</sub>(t)</code> for <img src="http://2017.igem.org/wiki/images/5/51/T--SYSU-Software--modeling_j-1-to-n.png" alt="" class="inlined-formula"></p>
           <img src="http://2017.igem.org/wiki/images/d/d2/T--SYSU-Software--modeling_longest.png" id="longest-img" alt="" class="centered formula">
@@ -271,6 +271,14 @@
           <h3>Imlementation</h3>
           <p>We use Scipy, an efficient open source numerical module in Python, to give the numerical solutions to the ODE system. Specifically, we use the odeint function in Scipy. For more information about odeint function, see <a href=" https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html" target="_blank">documentation of scipy</a></p>
         </div>
+      </section>
+
+      <section class="plain" id="references">
+        <h2>References</h2>
+        <ul>
+          <li> Jure Leskovec, Anand Rajaraman, Jeffrey David Ullman. Mining of Massive Datasets. Second Edition, Cambridge, Nov 2014, 9781107077232.</li>
+          <li>Bor-Sen Chen, Yu-Chao Wang. Synthetic Gene Network: Modeling, Analysis and Robust Design Methods. First Edition, CRC press, May 2, 2014, 9781466592698.</li>
+        </ul>
       </section>
     </div>
 

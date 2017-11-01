@@ -38,3 +38,7 @@
 .snake.double-pic img {
     height: 23vw;
 }
+
+.problem {
+    font-style: italic;
+}

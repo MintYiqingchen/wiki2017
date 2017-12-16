@@ -72,7 +72,6 @@ ol {
 li {
     line-height: 1.3em;
     text-align: left;
-    font-size: 1.2rem;
 }
 
 #overview {
@@ -197,7 +196,7 @@ img.blue-background {
 
 #firstnav {
     background-color: rgba(1, 124, 135, 0.8);
-    /* top: 16px; */
+    top: 16px;
 }
 
 #firstnav a {
@@ -274,7 +273,9 @@ img.blue-background {
     font-weight: bold;
     text-align: center;
     text-shadow: 0.03em 0.03em 0.15em #5d5231;
-    font-family: serif;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-variant: small-caps;
     text-decoration: none;
 }
 

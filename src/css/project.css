@@ -224,3 +224,49 @@ img.screen-crop {
     font-style: italic;
     font-weight: 600;
 }
+
+div#awardList {
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 3px 6px 10px #c0c0c0;
+    background: white;
+    width: 75%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em auto;
+    
+}
+
+
+#truePage.realPage #photoGroup {
+    display: flex;
+    width: 45%;
+    flex-flow: row wrap;
+    margin: 2em 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-width: 280px;
+}
+#truePage.realPage #photoGroup>img:first-of-type {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+}
+div#blueunder {
+    background: #cce6ff;
+    position: absolute;
+    z-index: inherit;
+    left: 15px;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+}
+#truePage.realPage #photoGroup>img {
+    width: inherit;
+    height: auto;
+    display: block;
+    margin: 10px 0 0 0;
+    z-index:1;
+}

@@ -61,3 +61,8 @@ img.inlined-formula {
     border: none;
     background: none;
 }
+
+#references>ul li{
+    margin:1rem 0;
+    font-size:1.3rem;
+}

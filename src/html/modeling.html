@@ -22,24 +22,24 @@
     });
             
   </script>
+
   <link rel="stylesheet" href="/wiki/index.php?title=Template:SYSU-Software/lib/semantic.min.css&amp;action=raw&amp;ctype=text/css">
   <link href="/wiki/index.php?title=Template:SYSU-Software/css/common.css&amp;action=raw&amp;ctype=text/css" rel="stylesheet" rel="stylesheet">
+  <link
   <link rel="stylesheet" href="http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/css/modeling.css&action=raw&ctype=text/css">
 </head>
 
 <body>
   <div id="truePage" class="realPage">
     <div id="firstnav" class="ui fixed collapsed borderless ten menu">
-      <a id="sdin-link" href="#">
+      <a id="sdin-link" href="http://sdin.sysusoftware.info" target="_blank">
         <img id="sdin-icon" src="http://2017.igem.org/wiki/images/1/17/T--SYSU-Software--project_sdin-small.png" alt="logo">
       </a>
-
       <div class="ui simple dropdown item page-nav">
         <a href="http://2017.igem.org/Team:SYSU-Software/Project" class="page-link">Project</a>
         <div class="menu page-category">
           <a href="http://2017.igem.org/Team:SYSU-Software/Project#description" class="item">Description</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Project#applied-design" class="item">Applied Design</a>
-          <a href="http://2017.igem.org/Team:SYSU-Software/Project#feature" class="item">Features</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Project#wet-lab" class="item">Wet-Lab Validation</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Project#demonstrate" class="item">Demonstrate</a>
         </div>
@@ -53,17 +53,9 @@
           <a href="http://2017.igem.org/Team:SYSU-Software/Model#references" class="item">References</a>
         </div>
       </div>
+      
       <div class="ui simple dropdown item page-nav">
-        <a href="http://2017.igem.org/Team:SYSU-Software/Medal" class="page-link">Medals</a>
-        <div class="menu page-category">
-          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#overview" class="item">Overview</a>
-          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#bronze" class="item">Bronze</a>
-          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#silver" class="item">Silver</a>
-          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#gold" class="item">Gold</a>
-        </div>
-      </div>
-      <div class="ui simple dropdown item page-nav">
-        <a href="http://2017.igem.org/wiki/index.php?title=Team:SYSU-Software/HP" class="page-link">Human Practice</a>
+        <a href="http://2017.igem.org/wiki/index.php?title=Team:SYSU-Software/HP" class="page-link">Human Practices</a>
         <div class="menu page-category">
           <a href="http://2017.igem.org/wiki/index.php?title=Team:SYSU-Software/HP#overview_id" class="item">Overview</a>
           <a href="http://2017.igem.org/wiki/index.php?title=Team:SYSU-Software/HP#silver" class="item">Silver</a>
@@ -73,7 +65,7 @@
         </div>
       </div>
       <div class="ui simple dropdown item page-nav">
-        <a href="http://2017.igem.org/Team:SYSU-Software/Collaborations" class="page-link">Collaboration</a>
+        <a href="http://2017.igem.org/Team:SYSU-Software/Collaborations" class="page-link">Collaborations</a>
         <div class="menu page-category">
           <a href="http://2017.igem.org/Team:SYSU-Software/Collaborations#overview" class="item">Overview</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Collaborations#scut-china-a" class="item">SCUT-CHINA-A</a>
@@ -119,6 +111,15 @@
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#advisors" class="item">Advisors</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#instructors" class="item">Instructors</a>
           <a href="http://2017.igem.org/Team:SYSU-Software/Team#notebook" class="item">Notebook</a>
+        </div>
+      </div>
+      <div class="ui simple dropdown item page-nav">
+        <a href="http://2017.igem.org/Team:SYSU-Software/Medal" class="page-link">Medal</a>
+        <div class="menu page-category">
+          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#overview" class="item">Overview</a>
+          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#bronze" class="item">Bronze</a>
+          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#silver" class="item">Silver</a>
+          <a href="http://2017.igem.org/Team:SYSU-Software/Medal#gold" class="item">Gold</a>
         </div>
       </div>
       <div class="ui simple dropdown item page-nav">
@@ -173,10 +174,14 @@
             <li>Construct KD Tree based on the normalized word vectors of the key words in the database which we previously mentioned. (Offline)</li>
             <li>When the user enter a new word , we search the similar key words along the KD Tree that we constructed in step 1) . (Online)</li>
           </ol>
-          <p>Note that KD Tree Algorithm is based on Euclidean distance measure , while in our case , we need to calculate the cosine distance of the word vectors. To solve this problem ,we normalize all the word vectors of key words before constructing KD Tree and normalize the word vector of new words offered by users before letting it travel along the constructed KD Tree. The reason behind the method is that by Law of Cosines:</p>
-          <img src="http://2017.igem.org/wiki/images/6/6f/T--SYSU-Software--model_law-of-cos.png" alt="law of cosine" class="centered formula" id="law-of-cos-img">
-          <p>while since <code>x<sup>1</sup>,x<sup>2</sup></code> are normalized, we have :</p>
-          <img src="http://2017.igem.org/wiki/images/a/a8/T--SYSU-Software--modeling_law-of-cos2.png" alt="law of cosine" class="centered formula" id="law-of-cos2-img">
+          <p>Note that KD Tree Algorithm is based on Euclidean distance measure , while in our case , we need to calculate the cosine distance of the word vectors. To solve this problem ,we normalize all the word vectors of key words before constructing KD Tree and normalize the word vector of new words offered by users before letting it travel along the constructed KD Tree. The reason behind the method is that by Law of Cosines:
+          $$|x_1-x_2|=\sqrt{x_1^2+x_2^2-2|x_1||x_2|\cos(x_1,x_2)}\,,\,\,x_1,x_2\in R^n$$
+          </p>
+          
+          <p>while since <code>x<sup>1</sup>,x<sup>2</sup></code> are normalized, we have :
+          $$|x_1-x_2| = \sqrt{1+1-2\cos(x_1,x_2)}\,,\,\,x_1,x_2\in R^n, |x_1|=|x_2|=1$$
+          </p>
+          
           <p>Now we see that the calculation of cosine distance between normalized vectors can be replaced by the calculation of Euclidean distance since they can determine each other in this normalization context.</p>
           <p>In our Recommendation System , we use the KD Tree implementation in scikit-learn , a simple and efficient open source machine learning module in Python. For more details of KD Tree algorithm, see: <a href=" https://en.wikipedia.org/wiki/K-d_tree" target="_blank">wiki page of K-D Tree</a></p>
         </div>
@@ -203,13 +208,21 @@
         <div class="paragraph">
           <p><code>for</code> keyword <code>i</code> in <code>1 to N</code></p>
           <h6>Define and initialize <code>v</code></h6>
-          <p>Let <code>e<sub>i</sub></code> be the column vector that has 1 in the row for node <code>i</code> and 0’s elsewhere, i.e.</p>
-          <img src="http://2017.igem.org/wiki/images/5/58/T--SYSU-Software--modeling_eij.png" alt="eij" id="eij-img" class="centered formula">
+          <p>Let <code>e<sub>i</sub></code> be the column vector that has 1 in the row for node <code>i</code> and 0’s elsewhere, i.e.
+          $$e_{ij}=\delta_{ij}=
+          \begin{cases}
+          1, & \text{if $i=j$} \\
+          0, & \text{if $i\neq j$} 
+          \end{cases}$$
+          </p>
+          
           <p>And <code>e<sub>i</sub></code> is the column vector such that each item reflects the probability the walker stays at each node of the graph and the initial <code>v</code> is set to be <code>e<sub>i</sub></code>.</p>
           <h6>Update <code>v</code> by</h6>
-          <img src="http://2017.igem.org/wiki/images/2/2e/T--SYSU-Software--modeling_bmv.png" alt="bmv+(1-b)ei" id="bmv-img" class="centered formula">
-          <p>update code{v} until the terminal condition is satisfied, i.e.</p>
-          <img src="http://2017.igem.org/wiki/images/e/e6/T--SYSU-Software--modeling_term-cond.png" alt="terminal condition" id="time-cond-img" class="centered formula">
+          <p>$$v'=\beta M v+(1-\beta)e_N$$</p>
+          <p>update code{v} until the terminal condition is satisfied, i.e.
+          $$|v^{(t)}-v^{(t-1)}|<\epsilon,\,\,\text{for sometime $t$}$$
+          </p>
+        
           <h6>Modify <code>v</code></h6>
           <p>Since the first n components of <code>v</code> are the affiliation between key word <code>i</code> and the other key words which we are not interested , therefore we only keep the last m components of <code>v</code>, which reflects the affiliation between key word <code>i</code> and all the parts.</p>
         </div>
@@ -221,36 +234,39 @@
         </div>
         <h5>Train word vector model</h5>
         <div class="paragraph">
-          <p>We feed our word vector model with Wikimedia corpus . After the training process is done, we have a model that can convert words into numerical vectors, i.e.</p>
-          <img src="http://2017.igem.org/wiki/images/c/c0/T--SYSU-Software--modeling_f-gamma-r.png" id="f-gamma-r-img" alt="" class="centered formula">
+          <p>We feed our word vector model with Wikimedia corpus . After the training process is done, we have a model that can convert words into numerical vectors, i.e.
+          $$f:\Gamma\rightarrow R^n$$
+          </p>
           <p>where &Gamma; denoted the corpus space</p>
         </div>
         <h5>Convert keywords into normalized vectors</h5>
         <div class="paragraph">
           <p>let <code>T</code> denotes the set of word vectors</p>
           <p><code>for</code> keyword <code>i</code> in <code>1 to N</code>:</p>
-          <p><code>T</code>.append(<img id="normalize-i" class="inlined-formula" src="http://2017.igem.org/wiki/images/6/64/T--SYSU-Software--modeling_normalize-i.png" alt="f(i)/|f(i)|">)</p>
+          <p><code>T</code>.append \( \frac{f(i)}{|f(i)|_2} \)</p>
         </div>
         <h5>Build KD Tree</h5>
         <p>We use the standard construction procedure to build KD Tree of set <code>T</code>. Details will be ignored here. For the people who are interested , we offered a link to wikipedia in section2.</p>
 
         <h4>Collaborative Filtering</h4>
+        <img src="http://2017.igem.org/wiki/images/6/66/T--SYSU-Software--model_workflow.jpg" alt="" id="workflow-img" class="ui image middle">
         <div class="paragraph">
           <p>This is the final step to construct our Recommendation System , overall we use collaborative filtering strategy to make prediction.</p>
           <p>Here is the algorithm</p>
         </div>
         <h5>Transform users input</h5>
-        <p>We get users input word <code>k</code>, we then convert it into normalized word vector <code>v</code>, i.e.</p>
-        <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_normalize-k.png" alt="" id="normalize-k-img" class="centered formula">
+        <p>We get users input word <code>k</code>, we then convert it into normalized word vector <code>v</code>, i.e. $$v=\frac{f(k)}{|f(k)|}$$</p>
+        
         <h5>Search K most similar keywords(KNN)</h5>
         <p>Let <code>v</code> travel along the KD Tree in a way like binary search , we can end up with <code>K</code>(in our case , <code>K</code> is set to be 5) most similar key words(KNN) to the current word <code>k</code>.</p>
         <h5>Make Recommendation</h5>
         <div class="paragraph">
-          <p>We have calculated the affiliation between key words and parts which shall be used to guide our final recommendation. Let <code>p<sub>i</sub></code> denotes the connection between the <code>i</code>th part and the current word <code>k</code> , we calculate <code>p<sub>i</sub></code> by formula</p>
-          <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_affiliation.png" alt="" id="affi-img" class="centered formula">
-          <p>where <img src="http://2017.igem.org/wiki/images/f/f1/T--SYSU-Software--modeling_wn.png" alt="" class="inlined-formula"> denotes the <code>k</code> most similar key words</p>
+          <p>We have calculated the affiliation between key words and parts which shall be used to guide our final recommendation. Let <code>p<sub>i</sub></code> denotes the connection between the <code>i</code>the part and the current word <code>k</code> , we calculate <code>p<sub>i</sub></code> by formula $$p_i=\sum^K_{n=1}\frac{\text{Affiliation}(w_n,p_i)}{\text{distance}(w_n,k)+\text{bias}}$$
+          </p>
+          
+          <p>where \( \{w_n|n=1,2,...,K\}\) denotes the <code>k</code> most similar key words</p>
           <p><code>Affiliation(w<sub>n</sub>, p<sub>i</sub>)</code>denotes the connection between <code>w<sub>i</sub></code> and the <code>i</code>th part and <code>distance(w<sub>i</sub>, k)</code> denotes the the Euclidean distance between the normalized word vectors of <code>w<sub>n</sub></code> and word <code>k</code>.</p>
-          <p>After the computation of <img src="http://2017.igem.org/wiki/images/0/00/T--SYSU-Software--modeling_pi.png" alt="" class="inlined-formula">, we use heap sort algorithm to get <code>R</code> highest <code>p<sub>i</sub></code> and recommend to the users the corresponding parts.Besides, we use exactly the same strategy to make recommendation of related projects to the users. For simplicity, we ignore the details here.</p>
+          <p>After the computation of \(\{p_i|i=1,2,...,m\}\), we use heap sort algorithm to get <code>R</code> highest <code>p<sub>i</sub></code> and recommend to the users the corresponding parts.Besides, we use exactly the same strategy to make recommendation of related projects to the users. For simplicity, we ignore the details here.</p>
         </div>
       </section>
 
@@ -260,14 +276,25 @@
         <p>The users of S-Din are all active and innovative researchers in Synthetic Biology, who come up with many interesting and new ideas in a wide range of fields. Our software helps them achieve their creative goals by allowing them to combine various genetic parts together to form brand-new genetic circuits that may never exist before. To help the researchers have a deeper understanding of how the genetic system that they created works, we construct an ODE system to simulate the dynamic behaviors of the genetic system mathematically. The main challenge of simulation is the uncertainty of genetic circuits since the users can construct them arbitrarily. Therefore, we build a rather general model capable of simulating various genetic circuits.</p>
         <h3>Model</h3>
         <div class="paragraph">
-          <p>The interaction among the substances in genetic circuits can be characterized by a <code>n * n</code> relation matrix <code>R</code>, where <code>n</code> is number of substances. The entry in row <code>i</code> and column <code>j</code> has 3 possible values for 3 possible relations, i.e. </p>
-          <img src="http://2017.igem.org/wiki/images/6/6c/T--SYSU-Software--model_rij.png" id="rij-img" alt="" class="centered formula">
+          <p>The interaction among the substances in genetic circuits can be characterized by a <code>n * n</code> relation matrix <code>R</code>, where <code>n</code> is number of substances. The entry in row <code>i</code> and column <code>j</code> has 3 possible values for 3 possible relations, i.e. $$
+          R_{i,j}=
+          \begin{cases}
+          1 & \text{if $i$ promotes $j$} \\
+          -1 & \text{if $i$ inhibits $j$} \\
+          0 & \text{No effect}
+          \end{cases}
+          $$</p>
+          
           <p>Therefore , the <code>j</code>th column records all the impacts the system exerts to the <code>j</code>th substances.</p>
-          <p>Let <code>x<sub>j</sub>(t)</code> denotes the concentration of substance <code>j</code> at time <code>t</code> , then we use the following ODE to characterize <code>x<sub>j</sub>(t)</code> for <img src="http://2017.igem.org/wiki/images/5/51/T--SYSU-Software--modeling_j-1-to-n.png" alt="" class="inlined-formula"></p>
-          <img src="http://2017.igem.org/wiki/images/d/d2/T--SYSU-Software--modeling_longest.png" id="longest-img" alt="" class="centered formula">
-          <p>where &beta; represents the degradation rate and:</p>
-          <img src="http://2017.igem.org/wiki/images/8/86/T--SYSU-Software--modeling_fx-gx.png" id="fx-gx-img" alt="" class="centered formula">
-          <p></p>
+          <p>Let <code>x<sub>j</sub>(t)</code> denotes the concentration of substance <code>j</code> at time <code>t</code> , then we use the following ODE to characterize <code>x<sub>j</sub>(t)</code> for \(j\in\{1,2,...n\}\)
+          $$ \frac{\mathbb{d}x_j(t)}{\mathbb{d}t} = \prod_{i=1}^n\{ \frac{R_{ij}(R_{ij}+1)}{2}f(x_i(t))+\frac{(R_{ij}+1)(R_{ij}-1)}{-1}+\frac{R_{ij}(R_{ij}-1)}{2}g(x_i(t))\}- \beta \times x_j(t)
+          $$
+          </p>
+          
+          <p>where &beta; represents the degradation rate and:
+          $$ f(x)=1+\frac{1}{1+\mathbb{e}^{-x}}; f(x)=1-\frac{1}{1+\mathbb{e}^{-x}} $$
+          </p>
+          
           <h3>Imlementation</h3>
           <p>We use Scipy, an efficient open source numerical module in Python, to give the numerical solutions to the ODE system. Specifically, we use the odeint function in Scipy. For more information about odeint function, see <a href=" https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html" target="_blank">documentation of scipy</a></p>
         </div>
@@ -306,6 +333,8 @@
   </div>
   <script src="http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/lib/T--SYSU-Software--jquery.min.js&amp;action=raw&amp;ctype=text/javascript"></script>
   <script src="http://2017.igem.org/wiki/index.php?title=Template:SYSU-Software/lib/semantic.min.js&amp;action=raw&amp;ctype=text/javascript"></script>
+  <script src="http://2017.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 </body>
 
 </html>
